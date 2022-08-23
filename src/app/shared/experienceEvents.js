@@ -1,22 +1,30 @@
-import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+//import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+//import imageOne from "../assets/images/cartoonWebsite.jpg";
+//import imageTwo from "../assets/images/cartoonWebsite2.jpg";
+import TrainrAI_ImageOne from "../assets/images/TrainrAI_Images/TrainrAI_ImageOne.PNG";
+import TrainrAI_ImageTwo from "../assets/images/TrainrAI_Images/TrainrAI_ImageTwo.PNG";
+import TrainrAI_ImageThree from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG";
 
 export const EVENTS = [
   {
     id: 0,
-    title: "TrainrAI app",
-    dateRange: "Nov 2021 - in progress",
+    title: "TrainrAI",
+    dateRange: "Nov 2021 - Current ",
     icon: "swift",
-  
+    subtitle: "Founder & Software Developer",
     achievements: [],
     description:
       "Teamed up with my dad to build an app that helps people create and stay consistent with healthy habits. This is my first SwiftUI project.",
     languages: ["SwiftUI"],
     librariesAndFrameworks: [],
+    technology: ["SwiftUI", "Core Data", "CloudKit"],
+    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
   },
   {
     id: 1,
     title: "Nucamp Fullstack Bootcamp",
     dateRange: "Feb 2021 - July 2021",
+    subtitle: "Earned the certificate of honors",
     icon: "react",
     achievements: ["Honors for final project"],
     description:
@@ -29,22 +37,36 @@ export const EVENTS = [
       "Bootstrap",
       "jQuery",
     ],
+
+    technology: [
+      "JavaScript",
+      "React",
+      "React Native",
+      "jQuery",
+      "Redux",
+      "Bootstrap",
+    ],
+    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
   },
 
   {
     id: 3,
-    title: "Web Programming with Python and Javascript (HarvardX)",
+    title: "Web Programming with Python and Javascript",
+    subititle: "HarvardX",
     dateRange: "Aug 2020 - Jan 2021",
     icon: "python",
     description:
-      "This was my first true experience with web development. During the span of the course, I went from reviewing HTML to learning about various was to test and security and scaling.",
+      "This was my first true experience with web development. During the span of the course, I went from reviewing HTML to learning about various ways to test and security and scaling.",
     achievements: [],
     languages: ["JavaScript", "Python", "SQL", "CSS", "HTML"],
     librariesAndFrameworks: ["Django"],
+    technology: ["JavaScript", "Python", "SQL", "Django"],
+    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
   },
   {
     id: 4,
     title: "Santa Monica College - Computer Science Major",
+    subitile: "Dean's Honor list - 2 Scholarships - STEM Program",
     icon: "laptop",
     description:
       "During the 2 years of my studies, I joined the STEM program and the computer science club as well.",
@@ -52,8 +74,14 @@ export const EVENTS = [
     dateRange: "Sept 2018 - June 2020",
     languages: ["C", "C++", "HTML"],
     librariesAndFrameworks: [],
+    technology: ["C", "C++", "HTML"],
+    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
   },
-  {
+];
+
+/*
+
+{
     id: 5,
     title: "Graduated HighSchool",
     icon: "graduationCap",
@@ -64,4 +92,5 @@ export const EVENTS = [
     languages: [],
     librariesAndFrameworks: [],
   },
-];
+
+  */

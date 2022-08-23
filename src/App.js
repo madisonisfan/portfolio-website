@@ -1,14 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header";
+import ExperiencePage from "./pages/ExperiencePage";
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      hone pageee
+    <div className="App app-style">
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="experience" element={<ExperiencePage />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+/*
+<Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="experience" element={<ExperiencePage />} />
+      </Routes>*/
