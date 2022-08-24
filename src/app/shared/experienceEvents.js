@@ -41,7 +41,7 @@ export const EVENTS = [
     technology: [
       "JavaScript",
       "React",
-      "React Native",
+      "ReactNative",
       "jQuery",
       "Redux",
       "Bootstrap",
@@ -50,7 +50,7 @@ export const EVENTS = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: "Web Programming with Python and Javascript",
     subititle: "HarvardX",
     dateRange: "Aug 2020 - Jan 2021",
@@ -64,7 +64,7 @@ export const EVENTS = [
     photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
   },
   {
-    id: 4,
+    id: 3,
     title: "Santa Monica College - Computer Science Major",
     subitile: "Dean's Honor list - 2 Scholarships - STEM Program",
     icon: "laptop",

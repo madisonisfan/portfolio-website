@@ -11,6 +11,7 @@ import "font-awesome/css/font-awesome.css";
 import "typeface-lobster";
 import "typeface-open-sans";
 import { EventImageCarousel } from "./features/experience/EventImageCarousel";
+import "./styles-sass.scss";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
