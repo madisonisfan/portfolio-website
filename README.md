@@ -1,6 +1,27 @@
-# Getting Started with Create React App and Redux
+
+#Portfolio Website 
+
+This is a simple portfolio website to display my education, experience, skills. There is much more progress to be made. 
+
+##Technologies
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+# Getting Started with Create React App and Redux
 
 ## Available Scripts
 
@@ -44,3 +65,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+-->
