@@ -1,17 +1,24 @@
 
-# Portfolio Website 
+# Portfolio Website - React 
 
-This is a simple portfolio website to display my education, experience, skills. There is much more progress to be made. 
+More information will be added here once the website has made more progress
+
+This is a simple portfolio website to display my education, experience, and skills. There is much more progress to be made. 
+
+# Current Features
+- Experience: On this page, all of my coding experience is displayed, including work and education. At the moment, I am creating pages that provide more details about each experience. 
+
+# Future Features
+- About: This page will talk a little about myself and my programming journey
+- Contact: This page will display my contact information, and may have a contact form
+- Resume: My resume will be linked somewhere on my website 
+
 
 ## Technologies
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
-
-
-
-
-
-
+- React 
+- Reactstrap
+- Font Awesome
+- React Router Dom
 
 
 
