@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from "reactstrap";
 import { PageTitle } from "../components/PageTitle";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -9,15 +10,17 @@ const HomePage = () => {
         <Col>Full-Stack Software Developer</Col>
       </Row>
       <Row className="button-row">
-        <Col xs={3}>
+        <Col>
           <Button outline className="home-button">
             Resume
           </Button>
         </Col>
-        <Col xs={3}>
-          <Button outline className="home-button">
-            Contact
-          </Button>
+        <Col>
+          <NavLink className="nav-link" to="/contact">
+            <Button outline className="home-button">
+              Contact
+            </Button>
+          </NavLink>
         </Col>
       </Row>
     </Container>

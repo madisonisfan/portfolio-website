@@ -21,23 +21,35 @@ const Header = () => {
       <Collapse isOpen={menuOpen} navbar>
         <Nav className="ms-auto" navbar>
           <NavItem>
-            <NavLink className="nav-link" to="/">
-              <i className="fa fa-home fa-lg" /> Home
+            <NavLink
+              //className="nav-link"
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+              }
+            >
+              Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/experience">
-              <i className="fa fa-list fa-lg" /> Experience
+            <NavLink
+              to="/experience"
+              className={({ isActive }) =>
+                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+              }
+            >
+              Experience
             </NavLink>
           </NavItem>
+
           <NavItem>
-            <NavLink className="nav-link" to="/">
-              <i className="fa fa-info fa-lg" /> Projects
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink className="nav-link" to="/">
-              <i className="fa fa-address-card fa-lg" /> Contact
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+              }
+            >
+              Contact
             </NavLink>
           </NavItem>
         </Nav>
@@ -47,3 +59,26 @@ const Header = () => {
 };
 
 export default Header;
+
+/*
+<NavItem>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+              }
+            >
+              Projects
+            </NavLink>
+          </NavItem>
+*/
+
+/*
+ICONS
+
+ <i className="fa fa-home fa-lg" /> 
+  <i className="fa fa-list fa-lg" />
+   <i className="fa fa-info fa-lg" />
+    <i className="fa fa-address-card fa-lg" />
+
+*/

@@ -1,5 +1,5 @@
 import { Row, Col } from "reactstrap";
-import ImageOne from "../../app/assets/images/sample_images/cartoonWebsite.jpg";
+import ImageOne from "../../../app/assets/images/sample_images/cartoonWebsite.jpg";
 
 export const EventDetail = ({ event }) => {
   const {

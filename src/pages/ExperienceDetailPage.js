@@ -1,9 +1,8 @@
 import { Container, Row, Col } from "reactstrap";
 import { PageTitle } from "../components/PageTitle";
 import { useParams } from "react-router-dom";
-
 import { EVENTS } from "../app/shared/experienceEvents";
-import { EventDetail } from "../features/experience/EventDetail";
+import { EventDetail } from "../features/experience/Complex/EventDetail";
 
 const ExperienceDetailPage = () => {
   const { eventId } = useParams();

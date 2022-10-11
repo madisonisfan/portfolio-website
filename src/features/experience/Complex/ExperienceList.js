@@ -1,4 +1,4 @@
-import { EVENTS } from "../../app/shared/experienceEvents";
+import { EVENTS } from "../../../app/shared/experienceEvents";
 import { EventDisplay } from "./EventDisplay";
 import { Row, Col } from "reactstrap";
 

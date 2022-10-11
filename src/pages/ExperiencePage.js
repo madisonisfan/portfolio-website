@@ -1,16 +1,19 @@
 import { Container, Row, Col } from "reactstrap";
 import { PageTitle } from "../components/PageTitle";
-import ExperienceEvents from "../features/experience/ExperienceList";
+import ExperienceEvents from "../features/experience/Complex/ExperienceList";
+import ExperienceListSimple from "../features/experience/Simple/ExperienceListSimple";
 import { useState, useEffect } from "react";
 
 const ExperiencePage = () => {
   return (
     <Container className="event-page">
       <PageTitle pageTitle="Experience" />
-      <ExperienceEvents />
+      <ExperienceListSimple />
     </Container>
   );
 };
+
+////<ExperienceEvents />
 
 export default ExperiencePage;
 

@@ -6,6 +6,11 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
+.event-page {
+  height: 100vh;
+  background-color: $mainBackgroundColor;
+}
+
 //EVENT DETAIL
 
 .event-detail-page {

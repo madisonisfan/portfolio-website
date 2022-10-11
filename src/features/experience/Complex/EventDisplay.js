@@ -3,10 +3,10 @@ import Card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 //import ImageOne from "../../app/assets/images/TrainrAI_Images/TrainrAI_Logo.png";
-import ImageOne from "../../app/assets/images/sample_images/cartoonWebsite.jpg";
+import ImageOne from "../../../app/assets/images/sample_images/cartoonWebsite.jpg";
 
 import { EventImageCarousel } from "./EventImageCarousel";
-import { PageTitle } from "../../components/PageTitle";
+import { PageTitle } from "../../../components/PageTitle";
 
 export const EventDisplay = ({ event, isBelowMd }) => {
   const { title, dateRange, description, photos, id, subtitle, technology } =
