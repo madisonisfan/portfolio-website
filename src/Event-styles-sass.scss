@@ -1,0 +1,131 @@
+$mainBackgroundColor: #171629;
+$darkPurpleText: #c9b7db;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+//EVENT DETAIL
+
+.event-detail-page {
+  //not sure why i had to do this here too???
+  height: 100vh;
+}
+
+.event-description-point {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.event-description-points {
+  text-align: left;
+  //list-style: none;
+}
+
+/*EVENT PAGE*/
+@media only screen and (max-width: $sm) {
+}
+
+//BELOW MD
+@media only screen and (max-width: $md) {
+  .event-page {
+    max-width: 80% !important;
+  }
+  .card.event-card {
+    height: 400px;
+    background-color: #282646;
+    margin-bottom: 60px;
+  }
+  .event-image {
+    display: none;
+  }
+  .event-description {
+    margin-top: 10px;
+    background-color: #282646;
+    color: $darkPurpleText;
+    text-align: left;
+  }
+
+  .event-card-overlay {
+    padding: 35px;
+  }
+}
+
+//MD & UP
+@media only screen and (min-width: $md) {
+  .event-page {
+    max-width: 70% !important;
+  }
+  .card.event-card {
+    margin-bottom: 75px;
+    border: none;
+    color: white;
+    max-height: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $mainBackgroundColor;
+  } /*background-color: #1c1a30;*/
+  .event-image {
+    display: block;
+    height: auto;
+    width: 400px !important;
+    opacity: 0.5;
+  }
+
+  //being ignored rn bc of styles in the eventdisplay file
+  .event-row {
+    align-items: center;
+  }
+  .event-description {
+    margin-top: 10px;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 20px;
+    text-align: left;
+  }
+}
+
+.event-subtitle {
+  text-align: left;
+  padding-bottom: 10px;
+  color: #8b50e3;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #000000;
+  //font-family: "Courier New", Courier, monospace;
+}
+
+//EVENT TITLE
+.event-title {
+  font-weight: bold;
+  font-size: 25px !important;
+  text-align: left;
+  color: $darkPurpleText;
+  padding-bottom: 10px;
+}
+
+//EVENT TECH
+.event-tech-list {
+  text-align: left;
+  padding: 0;
+}
+.event-tech {
+  color: #8b50e3;
+  font-weight: 300;
+  padding-top: 0px;
+  display: inline;
+  padding-right: 20px;
+  text-shadow: 1px 1px 1px #000000;
+  //font-family: "Courier New", Courier, monospace;
+}
+
+//EVENT DATE
+.event-date {
+  text-align: left;
+  color: #8b50e3;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #000000;
+  //font-family: "Courier New", Courier, monospace;
+}

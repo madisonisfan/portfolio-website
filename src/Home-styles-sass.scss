@@ -1,0 +1,50 @@
+$mainBackgroundColor: #171629;
+$darkPurpleText: #c9b7db;
+$neonPurple: #8b50e3;
+
+.home-page {
+  background-color: $mainBackgroundColor;
+  height: 100vh;
+  margin-top: 200px;
+}
+
+.name {
+  text-align: "center";
+  justify-content: "center";
+  font-size: 90px;
+  color: $darkPurpleText;
+  font-weight: 700;
+}
+
+.top-subtitle {
+  color: $neonPurple;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 300px;
+}
+
+.bottom-subtitle {
+  color: $darkPurpleText;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.home-body {
+  color: $darkPurpleText;
+}
+
+.button-row {
+  margin-top: 70px;
+  justify-content: center;
+  //justify-content: "space-around";
+}
+
+.home-button {
+  //justify-content: "space-between";
+  color: $neonPurple;
+  border-color: $neonPurple;
+  font-family: "Courier New", Courier, monospace;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 400;
+}

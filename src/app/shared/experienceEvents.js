@@ -18,11 +18,18 @@ export const EVENTS = [
     languages: ["SwiftUI"],
     librariesAndFrameworks: [],
     technology: ["SwiftUI", "Core Data", "CloudKit"],
+    descriptionPoints: [
+      "Created an iOS app in SwiftUI that helps people build healthy habits",
+      "Distributed through TestFlight and being used by a small group of beta testers",
+      "Users are able to check off daily tasks, add bonus tasks, complete a weekly fitness assessment, view their current “perfect day” streaks and track their fitness progress",
+      "Learning and iterating on the app based on user feedback",
+      "Participated in Founder University (Jason Calacanis initiative) to kick off the project: goal was to come up with an idea and launch it in 90 days which I was able to achieve",
+    ],
     photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
   },
   {
     id: 1,
-    title: "Nucamp Fullstack Bootcamp",
+    title: "Nucamp Full Stack Bootcamp",
     dateRange: "Feb 2021 - July 2021",
     subtitle: "Earned the certificate of honors",
     icon: "react",
@@ -30,6 +37,12 @@ export const EVENTS = [
     description:
       "By the end of this bootcamp, I was able to build dynamic web and mobile app with the use of React and React Native. As part of the bootcamp, I was taught how to create a backend for a web app. On my own time, I taught myself how to build the backend for mobile apps. ",
     languages: ["JavaScript", "CSS/SCSS", "HTML"],
+    descriptionPoints: [
+      "Development of responsive websites using bootstrap framework",
+      "Use React to create dynamic web applications. ",
+      "Use React Native to build and deploy mobile applications",
+      "Learn about and implement backend database operations, user authentication and application logic. ",
+    ],
     librariesAndFrameworks: [
       "React",
       "React Native",
@@ -62,6 +75,12 @@ export const EVENTS = [
     librariesAndFrameworks: ["Django"],
     technology: ["JavaScript", "Python", "SQL", "Django"],
     photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
+    descriptionPoints: [
+      "Self-directed online learning",
+      "The course dove deep into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Topics include database design, scalability, security, and user experience.",
+      "Testing methodologies",
+      "Scaling and security ",
+    ],
   },
   {
     id: 3,
