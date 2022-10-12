@@ -1,9 +1,12 @@
 //import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 //import imageOne from "../assets/images/cartoonWebsite.jpg";
 //import imageTwo from "../assets/images/cartoonWebsite2.jpg";
+import HarvardX_Certificate from "../assets/images/HarvardX_Certificate.png";
 import TrainrAI_ImageOne from "../assets/images/TrainrAI_Images/TrainrAI_ImageOne.PNG";
 import TrainrAI_ImageTwo from "../assets/images/TrainrAI_Images/TrainrAI_ImageTwo.PNG";
 import TrainrAI_ImageThree from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG";
+import Mealplanner_React from "../assets/images/mealplanner-react-recipes.png";
+import Scholarship from "../assets/images/scholarship.jpeg";
 
 export const EVENTS = [
   {
@@ -59,12 +62,12 @@ export const EVENTS = [
       "Redux",
       "Bootstrap",
     ],
-    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
+    photos: [Mealplanner_React],
   },
 
   {
     id: 2,
-    title: "Web Programming with Python and Javascript",
+    title: "Web Programming with Python and JavaScript",
     subititle: "HarvardX",
     dateRange: "Aug 2020 - Jan 2021",
     icon: "python",
@@ -74,7 +77,13 @@ export const EVENTS = [
     languages: ["JavaScript", "Python", "SQL", "CSS", "HTML"],
     librariesAndFrameworks: ["Django"],
     technology: ["JavaScript", "Python", "SQL", "Django"],
-    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
+    photos: [
+      HarvardX_Certificate,
+
+      TrainrAI_ImageOne,
+      TrainrAI_ImageTwo,
+      TrainrAI_ImageThree,
+    ],
     descriptionPoints: [
       "Self-directed online learning",
       "The course dove deep into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Topics include database design, scalability, security, and user experience.",
@@ -84,7 +93,7 @@ export const EVENTS = [
   },
   {
     id: 3,
-    title: "Santa Monica College - Computer Science Major",
+    title: "Santa Monica College - CS Major",
     subitile: "Dean's Honor list - 2 Scholarships - STEM Program",
     icon: "laptop",
     description:
@@ -94,7 +103,7 @@ export const EVENTS = [
     languages: ["C", "C++", "HTML"],
     librariesAndFrameworks: [],
     technology: ["C", "C++", "HTML"],
-    photos: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
+    photos: [Scholarship],
   },
 ];
 

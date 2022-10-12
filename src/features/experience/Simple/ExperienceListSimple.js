@@ -4,11 +4,11 @@ import EventDisplaySimple from "./EventDisplaySimple";
 
 const ExperienceListSimple = () => {
   return (
-    <Row>
+    <Row style={{ marginTop: "20px" }}>
       {EVENTS.map((event) => {
         return (
           event && (
-            <Col key={event.id}>
+            <Col key={event.id} xs={12}>
               <EventDisplaySimple event={event} />
             </Col>
           )

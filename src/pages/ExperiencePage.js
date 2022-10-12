@@ -3,16 +3,26 @@ import { PageTitle } from "../components/PageTitle";
 import ExperienceEvents from "../features/experience/Complex/ExperienceList";
 import ExperienceListSimple from "../features/experience/Simple/ExperienceListSimple";
 import { useState, useEffect } from "react";
+import { PageTitleTwo } from "../components/PageTitleTwo";
 
 const ExperiencePage = () => {
   return (
     <Container className="event-page">
       <PageTitle pageTitle="Experience" />
-      <ExperienceListSimple />
+      <ExperienceEvents />
     </Container>
   );
 };
 
+/*
+
+ <Row>
+        <Col className="experience-mainTitle-simple">My Experience</Col>
+      </Row>
+
+      */
+
+//<PageTitle pageTitle="Experience" />
 ////<ExperienceEvents />
 
 export default ExperiencePage;

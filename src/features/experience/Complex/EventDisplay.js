@@ -1,9 +1,10 @@
 import { Container, Row, Col, Carousel } from "reactstrap";
+import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 //import ImageOne from "../../app/assets/images/TrainrAI_Images/TrainrAI_Logo.png";
-import ImageOne from "../../../app/assets/images/sample_images/cartoonWebsite.jpg";
+//import ImageOne from "../../../app/assets/images/sample_images/cartoonWebsite.jpg";
 
 import { EventImageCarousel } from "./EventImageCarousel";
 import { PageTitle } from "../../../components/PageTitle";
@@ -22,8 +23,12 @@ export const EventDisplay = ({ event, isBelowMd }) => {
   const styles = {
     eventImage: {
       marginLeft: id % 2 == 0 ? "auto" : "0",
+      maxWidth: "60%",
+      maxHeight: "350px",
     },
     eventOverlay: {
+      //height: "450px",
+      //alignItems: "center",
       justifyContent: id % 2 == 0 ? "start" : "end",
     },
     eventTitle: {
@@ -44,17 +49,19 @@ export const EventDisplay = ({ event, isBelowMd }) => {
   };
   return (
     //{isBelowMd ? "event-card-below" : "event-card-above"}
-    <Link to={`${id}`}>
+    <Link to={`${id}`} style={{ paddingBottom: "20px" }}>
       <Card className="event-card" key={id}>
-        <Card.Img
-          src={ImageOne}
+        <Image
+          //src={ImageOne}
+          src={photos[0]}
           className="event-image"
           style={styles.eventImage}
+          rounded
         />
         <Card.ImgOverlay className="event-card-overlay">
-          <Container fluid className="p-0">
+          <Container className="p-0">
             <Row style={styles.eventOverlay}>
-              <Col xs="12" md="8">
+              <Col xs="12" lg="8">
                 <Card.Title className="event-title" style={styles.eventTitle}>
                   {title}
                 </Card.Title>

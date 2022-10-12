@@ -6,6 +6,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  Button,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
@@ -41,9 +42,20 @@ const Header = () => {
               Experience
             </NavLink>
           </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
+  );
+};
+
+/*
 
           <NavItem>
-            <NavLink
+            <Button outline className="home-button">
+              Contact
+            </Button>
+          </NavItem>
+<NavLink
               to="/contact"
               className={({ isActive }) =>
                 isActive ? "main-nav-link-active" : "main-nav-link-not-active"
@@ -51,12 +63,7 @@ const Header = () => {
             >
               Contact
             </NavLink>
-          </NavItem>
-        </Nav>
-      </Collapse>
-    </Navbar>
-  );
-};
+*/
 
 export default Header;
 

@@ -1,8 +1,19 @@
-import { Container, Row, Col, Button } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+} from "reactstrap";
 import { PageTitle } from "../components/PageTitle";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const HomePage = () => {
+  const [isContactModalOpen, toggleContactModal] = useState(false);
+
   return (
     <Container className="home-page">
       <Header />
@@ -16,16 +27,47 @@ const HomePage = () => {
           </Button>
         </Col>
         <Col>
-          <NavLink className="nav-link" to="/contact">
-            <Button outline className="home-button">
-              Contact
-            </Button>
-          </NavLink>
+          <Button
+            outline
+            className="home-button"
+            onClick={() => toggleContactModal(!isContactModalOpen)}
+          >
+            Contact
+          </Button>
         </Col>
       </Row>
     </Container>
   );
 };
+
+/**
+ <Modal
+        centered
+        style={{
+          height: "50%",
+        }}
+        isOpen={isContactModalOpen}
+        toggle={toggleContactModal}
+      >
+        <ModalHeader style={{ textAlign: "center" }}>Contact Me</ModalHeader>
+        <ModalBody>
+          <div>isfanmadison@gmail.com</div>
+          <a
+            href="https://www.linkedin.com/in/madison-isfan/"
+            style={{ color: "#8b50e3" }}
+          >
+            <i className="fa fa-linkedin fa-lg" />
+          </a>
+          <a
+            href="https://github.com/madisonisfan"
+            style={{ color: "#8b50e3" }}
+          >
+            <i className="fa fa-github fa-lg" />
+          </a>
+        </ModalBody>
+      </Modal>
+
+*/
 
 const Header = () => {
   return (
