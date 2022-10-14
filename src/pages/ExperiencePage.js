@@ -1,14 +1,14 @@
 import { Container, Row, Col } from "reactstrap";
-import { PageTitle } from "../components/PageTitle";
 import ExperienceEvents from "../features/experience/Complex/ExperienceList";
 import ExperienceListSimple from "../features/experience/Simple/ExperienceListSimple";
 import { useState, useEffect } from "react";
-import { PageTitleTwo } from "../components/PageTitleTwo";
+
+import PageTitleThree from "../components/PageTitle3";
 
 const ExperiencePage = () => {
   return (
     <Container className="event-page">
-      <PageTitle pageTitle="Experience" />
+      <PageTitleThree pageTitle="Experience" />
       <ExperienceEvents />
     </Container>
   );

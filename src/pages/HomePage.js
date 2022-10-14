@@ -15,6 +15,21 @@ const HomePage = () => {
   const [isContactModalOpen, toggleContactModal] = useState(false);
 
   return (
+    /* <div
+      className="d-flex align-items-center"
+      style={{
+        height: "500px",
+        width: "100px",
+        border: "solid",
+        borderColor: "yellow",
+        marginLeft: "50%",
+      }}
+    >
+      <div style={{ color: "white", border: "solid", borderColor: "pink" }}>
+        Hello
+      </div>
+    </div>*/
+
     <Container className="home-page">
       <Header />
       <Row className="bottom-subtitle">

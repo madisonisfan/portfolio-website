@@ -16,13 +16,13 @@ function App() {
           style={{
             backgroundColor: "#171629",
             width: "50px",
-            paddingTop: "150px",
+            paddingBottom: "75%",
             position: "fixed",
           }}
         >
           <i
-            class="fa fa-envelope"
-            style={{ color: "#8b50e3", fontSize: "28px", paddingTop: "100px" }}
+            className="fa fa-envelope"
+            style={{ color: "#8b50e3", fontSize: "28px" }}
           />
           <a
             href="https://www.linkedin.com/in/madison-isfan/"

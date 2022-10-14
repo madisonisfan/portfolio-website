@@ -114,6 +114,7 @@ $customXL: 1400px;
 
 .event-description {
   font-weight: 400;
+  // width: 70%;
 }
 
 /*
@@ -234,7 +235,8 @@ $customXL: 1400px;
 .event-subtitle {
   text-align: left;
   padding-bottom: 10px;
-  color: #8b50e3;
+  //color: #8b50e3;
+  color: $darkPurpleText;
   font-weight: 300;
   text-shadow: 1px 1px 1px #000000;
   //font-family: "Courier New", Courier, monospace;
@@ -246,7 +248,7 @@ $customXL: 1400px;
   font-size: 25px !important;
   text-align: left;
   color: $darkPurpleText;
-  padding-bottom: 10px;
+  //padding-bottom: 10px;
 }
 
 //EVENT TECH
@@ -255,11 +257,12 @@ $customXL: 1400px;
   padding: 0;
 }
 .event-tech {
-  color: #8b50e3;
+  //color: #8b50e3;
+  color: $darkPurpleText;
   font-weight: 300;
   padding-top: 0px;
   display: inline;
-  padding-right: 20px;
+  //padding-right: 20px;
   text-shadow: 1px 1px 1px #000000;
   //font-family: "Courier New", Courier, monospace;
 }
@@ -267,7 +270,8 @@ $customXL: 1400px;
 //EVENT DATE
 .event-date {
   text-align: left;
-  color: #8b50e3;
+  // color: #8b50e3;
+  color: $darkPurpleText;
   font-weight: 300;
   text-shadow: 1px 1px 1px #000000;
   //font-family: "Courier New", Courier, monospace;

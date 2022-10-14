@@ -32,7 +32,7 @@ const Header = () => {
               Home
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem style={{ alignItems: "center" }}>
             <NavLink
               to="/experience"
               className={({ isActive }) =>
@@ -41,6 +41,11 @@ const Header = () => {
             >
               Experience
             </NavLink>
+          </NavItem>
+          <NavItem>
+            <Button outline className="home-button">
+              Resume
+            </Button>
           </NavItem>
         </Nav>
       </Collapse>
