@@ -9,7 +9,7 @@ const PageTitleThree = ({ pageTitle }) => {
         marginBottom: "50px",
       }}
     >
-      {`{ ${pageTitle} }`}
+      {`{${pageTitle}}`}
     </div>
   );
 };

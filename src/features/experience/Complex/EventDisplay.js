@@ -13,6 +13,7 @@ import { PageTitle } from "../../../components/PageTitle";
 export const EventDisplay = ({ event, isBelowMd }) => {
   const { title, dateRange, description, photos, id, subtitle, technology } =
     event;
+  const { innerWidth: width, innerHeight: height } = window;
 
   const tech = technology.map((tech) => {
     return (
@@ -26,31 +27,34 @@ export const EventDisplay = ({ event, isBelowMd }) => {
 
   const styles = {
     eventImage: {
-      marginLeft: id % 2 == 0 ? "auto" : "0",
+      marginRight: id % 2 == 0 ? "auto" : "0",
+      marginLeft: id % 2 == 0 ? "0" : "auto",
       maxWidth: "60%",
       maxHeight: "350px",
     },
     eventOverlay: {
       //height: "450px",
       //alignItems: "center",
-      justifyContent: id % 2 == 0 ? "start" : "end",
+      justifyContent: id % 2 == 0 ? "end" : "start",
     },
     eventTitle: {
-      justifyContent: id % 2 == 0 ? "start" : "end",
+      justifyContent: width < 1400 ? "start" : id % 2 == 0 ? "end" : "start",
     },
     eventTechList: {
-      justifyContent: id % 2 == 0 ? "start" : "end",
+      justifyContent: id % 2 == 0 ? "end" : "start",
       marginTop: "10px",
     },
-    eventDescription: {
-      textAlign: id % 2 == 0 ? "left" : "right",
-      justifyContent: id % 2 == 0 ? "start" : "end",
+    eventDescriptionRow: {
+      justifyContent: id % 2 == 0 ? "end" : "start",
+    },
+    eventDescriptionText: {
+      textAlign: width < 1400 ? "left" : id % 2 == 0 ? "right" : "left",
     },
     eventDate: {
-      textAlign: id % 2 == 0 ? "left" : "right",
+      textAlign: width < 1400 ? "left" : id % 2 == 0 ? "right" : "left",
     },
     eventSubtitle: {
-      textAlign: id % 2 == 0 ? "left" : "right",
+      textAlign: width < 1400 ? "left" : id % 2 == 0 ? "right" : "left",
     },
   };
   return (
@@ -92,9 +96,12 @@ export const EventDisplay = ({ event, isBelowMd }) => {
                 <Card.Subtitle className="event-date" style={styles.eventDate}>
                   {dateRange}
                 </Card.Subtitle>
-                <Row className="d-flex" style={styles.eventDescription}>
+                <Row className="d-flex" style={styles.eventDescriptionRow}>
                   <Col lg={8}>
-                    <Card.Text className="event-description">
+                    <Card.Text
+                      className="event-description"
+                      style={styles.eventDescriptionText}
+                    >
                       {description}
                     </Card.Text>
                   </Col>

@@ -19,7 +19,8 @@ function App() {
             backgroundColor: "#171629",
             width: "50px",
             position: "fixed",
-            top: height / 2,
+            //bottom: height / 2,
+            bottom: "200px",
           }}
         >
           <i

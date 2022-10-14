@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <Navbar sticky="top" expand="md">
       <NavbarBrand className="ms-5" href="/">
-        <h1 className="mt-1">[ MI ]</h1>
+        <h1 className="mt-1">[MI]</h1>
       </NavbarBrand>
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
@@ -32,17 +32,7 @@ const Header = () => {
               Home
             </NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink
-              //className="nav-link"
-              to="/contact"
-              className={({ isActive }) =>
-                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
-              }
-            >
-              Contact
-            </NavLink>
-          </NavItem>
+
           <NavItem style={{ alignItems: "center" }}>
             <NavLink
               to="/experience"

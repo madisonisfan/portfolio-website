@@ -13,13 +13,16 @@ $neonPurple: #8b50e3;
   justify-content: "center";
   font-size: 90px;
   color: $darkPurpleText;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: lft-etica-mono;
+  font-style: normal;
 }
 
 .top-subtitle {
   color: $darkPurpleText;
   font-size: 25px;
-  font-family: "Courier New", Courier, monospace;
+  //font-family: "Courier New", Courier, monospace;
+  font-family: lft-etica-mono;
   font-weight: 300px;
   justify-content: "center";
 }
@@ -27,7 +30,8 @@ $neonPurple: #8b50e3;
 .bottom-subtitle {
   color: $darkPurpleText;
   font-size: 25px;
-  font-weight: 500;
+  font-family: lft-etica-mono;
+  font-weight: 300px;
 }
 
 .home-body {

@@ -36,13 +36,21 @@ const HomePage = () => {
       <Row className="bottom-subtitle">
         <Col>[ Full-Stack Software Developer ]</Col>
       </Row>
-      <Row className="button-row">
-        <Col>
-          <Button className="home-button d-flex">
-            <Seperator /> Resume <Seperator />
+      <Row className="button-row ">
+        <Col xs={12}>
+          <Button className="home-button" style={{ justifyContent: "center" }}>
+            <div className="d-flex">
+              <Seperator /> Resume <Seperator />
+            </div>
           </Button>
         </Col>
-        <Col>
+      </Row>
+    </Container>
+  );
+};
+
+/*
+<Col>
           <Button
             className="home-button d-flex"
             onClick={() => toggleContactModal(!isContactModalOpen)}
@@ -50,10 +58,7 @@ const HomePage = () => {
             <Seperator /> Contact <Seperator />
           </Button>
         </Col>
-      </Row>
-    </Container>
-  );
-};
+*/
 
 /**
  <Modal
