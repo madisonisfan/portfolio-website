@@ -7,6 +7,8 @@ import Contact from "./pages/ContactPage";
 import "./App.css";
 
 function App() {
+  const { innerWidth: width, innerHeight: height } = window;
+
   return (
     <div className="App app-style" style={{}}>
       <Header />
@@ -16,8 +18,8 @@ function App() {
           style={{
             backgroundColor: "#171629",
             width: "50px",
-            paddingBottom: "75%",
             position: "fixed",
+            top: height / 2,
           }}
         >
           <i

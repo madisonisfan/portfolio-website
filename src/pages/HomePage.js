@@ -2,14 +2,15 @@ import {
   Container,
   Row,
   Col,
-  Button,
   Modal,
   ModalHeader,
   ModalBody,
+  Button,
 } from "reactstrap";
 import { PageTitle } from "../components/PageTitle";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import Seperator from "../components/Seperator";
 
 const HomePage = () => {
   const [isContactModalOpen, toggleContactModal] = useState(false);
@@ -33,21 +34,20 @@ const HomePage = () => {
     <Container className="home-page">
       <Header />
       <Row className="bottom-subtitle">
-        <Col>Full-Stack Software Developer</Col>
+        <Col>[ Full-Stack Software Developer ]</Col>
       </Row>
       <Row className="button-row">
         <Col>
-          <Button outline className="home-button">
-            Resume
+          <Button className="home-button d-flex">
+            <Seperator /> Resume <Seperator />
           </Button>
         </Col>
         <Col>
           <Button
-            outline
-            className="home-button"
+            className="home-button d-flex"
             onClick={() => toggleContactModal(!isContactModalOpen)}
           >
-            Contact
+            <Seperator /> Contact <Seperator />
           </Button>
         </Col>
       </Row>

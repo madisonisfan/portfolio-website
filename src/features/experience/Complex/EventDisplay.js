@@ -3,26 +3,12 @@ import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Seperator from "../../../components/Seperator";
 //import ImageOne from "../../app/assets/images/TrainrAI_Images/TrainrAI_Logo.png";
 //import ImageOne from "../../../app/assets/images/sample_images/cartoonWebsite.jpg";
 
 import { EventImageCarousel } from "./EventImageCarousel";
 import { PageTitle } from "../../../components/PageTitle";
-
-const Seperator = () => {
-  return (
-    <div
-      style={{
-        paddingBottom: "3px",
-        paddingLeft: "10px",
-        paddingRight: "10px",
-        color: "#c9b7db",
-      }}
-    >
-      |
-    </div>
-  );
-};
 
 export const EventDisplay = ({ event, isBelowMd }) => {
   const { title, dateRange, description, photos, id, subtitle, technology } =
@@ -54,9 +40,11 @@ export const EventDisplay = ({ event, isBelowMd }) => {
     },
     eventTechList: {
       justifyContent: id % 2 == 0 ? "start" : "end",
+      marginTop: "10px",
     },
     eventDescription: {
       textAlign: id % 2 == 0 ? "left" : "right",
+      justifyContent: id % 2 == 0 ? "start" : "end",
     },
     eventDate: {
       textAlign: id % 2 == 0 ? "left" : "right",
@@ -77,9 +65,9 @@ export const EventDisplay = ({ event, isBelowMd }) => {
           rounded
         />
         <Card.ImgOverlay className="event-card-overlay">
-          <Container className="p-0">
-            <Row style={styles.eventOverlay}>
-              <Col xs="12" lg="8">
+          <Container className="p-0" style={styles.eventOverlay}>
+            <Row>
+              <Col xs={12}>
                 <div className="event-title d-flex" style={styles.eventTitle}>
                   <div>|</div>
 
@@ -94,7 +82,7 @@ export const EventDisplay = ({ event, isBelowMd }) => {
                   </div>
                   <div> | </div>
                 </div>
-                <Card.Title></Card.Title>
+
                 <Card.Subtitle
                   className="event-subtitle"
                   style={styles.eventSubtitle}
@@ -104,12 +92,13 @@ export const EventDisplay = ({ event, isBelowMd }) => {
                 <Card.Subtitle className="event-date" style={styles.eventDate}>
                   {dateRange}
                 </Card.Subtitle>
-                <Card.Text
-                  className="event-description"
-                  style={styles.eventDescription}
-                >
-                  {description}
-                </Card.Text>
+                <Row className="d-flex" style={styles.eventDescription}>
+                  <Col lg={8}>
+                    <Card.Text className="event-description">
+                      {description}
+                    </Card.Text>
+                  </Col>
+                </Row>
 
                 <ul className="event-tech-list">
                   <div

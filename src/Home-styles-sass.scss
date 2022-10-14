@@ -5,7 +5,7 @@ $neonPurple: #8b50e3;
 .home-page {
   background-color: $mainBackgroundColor;
   height: 100vh;
-  margin-top: 200px;
+  padding-top: 200px;
 }
 
 .name {
@@ -17,10 +17,11 @@ $neonPurple: #8b50e3;
 }
 
 .top-subtitle {
-  color: $neonPurple;
+  color: $darkPurpleText;
   font-size: 25px;
   font-family: "Courier New", Courier, monospace;
   font-weight: 300px;
+  justify-content: "center";
 }
 
 .bottom-subtitle {
@@ -41,10 +42,12 @@ $neonPurple: #8b50e3;
 
 .home-button {
   //justify-content: "space-between";
-  color: $neonPurple;
-  border-color: $neonPurple;
+  color: $darkPurpleText;
+  border: none;
+  //border-color: $mai;
   font-family: "Courier New", Courier, monospace;
+  background-color: $mainBackgroundColor;
   //width: 150px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
 }
