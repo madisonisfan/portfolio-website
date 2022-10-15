@@ -14,7 +14,7 @@ function App() {
       <Header />
       <div className="flex-row">
         <div
-          className="d-flex flex-column"
+          className="d-flex flex-column d-none d-md-block"
           style={{
             backgroundColor: "#171629",
             width: "50px",

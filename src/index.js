@@ -14,7 +14,7 @@ import { EventImageCarousel } from "./features/experience/Complex/EventImageCaro
 import "./Event-styles-sass.scss";
 import "./Home-styles-sass.scss";
 import "./contact-styles-sass.scss";
-import "./styles-sass.scss";
+import "./Styles-sass.scss";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

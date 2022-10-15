@@ -1,17 +1,66 @@
 $mainBackgroundColor: #171629;
 $darkPurpleText: #c9b7db;
 $neonPurple: #8b50e3;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
-.home-page {
+.home-page-div {
   background-color: $mainBackgroundColor;
   height: 100vh;
-  padding-top: 200px;
+  align-items: center;
+  //justify-content: center;
+  // padding-top: 80px;
+  //font-size: 20px;
+  //padding-top: 20px;
+}
+
+.home-page-container {
+  //background-color: $mainBackgroundColor;
+  // height: 100vh;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media only screen and (max-width: $md) {
+  .name {
+    font-size: 65px;
+  }
+
+  .bottom-subtitle {
+    font-size: 17px;
+  }
+  .top-subtitle {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .name {
+    font-size: 70px;
+  }
+
+  .bottom-subtitle {
+    font-size: 25px;
+  }
+  .top-subtitle {
+    font-size: 25px;
+  }
+}
+
+.bottom-subtitle {
+  color: $darkPurpleText;
+
+  font-family: lft-etica-mono;
+  font-weight: 300px;
 }
 
 .name {
   text-align: "center";
   justify-content: "center";
-  font-size: 90px;
+
   color: $darkPurpleText;
   font-weight: 500;
   font-family: lft-etica-mono;
@@ -20,18 +69,15 @@ $neonPurple: #8b50e3;
 
 .top-subtitle {
   color: $darkPurpleText;
-  font-size: 25px;
   //font-family: "Courier New", Courier, monospace;
   font-family: lft-etica-mono;
   font-weight: 300px;
   justify-content: "center";
 }
 
-.bottom-subtitle {
-  color: $darkPurpleText;
-  font-size: 25px;
-  font-family: lft-etica-mono;
-  font-weight: 300px;
+.home-page {
+  background-color: $mainBackgroundColor;
+  height: 100vh;
 }
 
 .home-body {

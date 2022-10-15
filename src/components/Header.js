@@ -43,16 +43,32 @@ const Header = () => {
               Experience
             </NavLink>
           </NavItem>
-          <NavItem>
-            <Button outline className="home-button">
-              Resume
-            </Button>
+          <NavItem
+            style={{ alignItems: "center" }}
+            className="d-block d-md-none"
+          >
+            <NavLink
+              to="/Contact"
+              className={({ isActive }) =>
+                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+              }
+            >
+              Contact
+            </NavLink>
           </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
   );
 };
+
+/*
+    <NavItem>
+            <Button outline className="home-button">
+              Resume
+            </Button>
+          </NavItem>
+*/
 
 /*
 

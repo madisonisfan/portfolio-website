@@ -1,6 +1,87 @@
 $mainBackgroundColor: #171629;
 $darkPurpleText: #c9b7db;
+$neonPurple: #8b50e3;
 
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@media only screen and (max-width: $md) {
+  .main-nav-link-not-active:hover {
+    color: #8b50e3;
+    font-weight: bold;
+  }
+
+  .main-nav-link-active {
+    color: #c9b7db !important;
+    text-decoration: none;
+    font-size: 18px !important;
+    font-family: lft-etica-mono;
+    font-weight: 450;
+  }
+  .main-nav-link-not-active {
+    color: #c9b7db;
+    text-decoration: none;
+    font-size: 18px !important;
+    font-family: lft-etica-mono;
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .main-nav-link-not-active:hover {
+    color: #8b50e3;
+    font-weight: bold;
+  }
+
+  .main-nav-link-active {
+    color: #c9b7db !important;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: solid;
+    border-color: #8b50e3;
+    padding-bottom: 7px;
+    font-size: 18px !important;
+    font-family: lft-etica-mono;
+  }
+
+  .main-nav-link-not-active {
+    color: #c9b7db;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px !important;
+    font-family: lft-etica-mono;
+  }
+}
+
+/*
+.main-nav-link-not-active:hover {
+  color: #8b50e3;
+  font-weight: bold;
+}
+
+.main-nav-link-active {
+  color: #c9b7db !important;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: solid;
+  border-color: #8b50e3;
+  padding-bottom: 7px;
+  font-size: 18px !important;
+  font-family: lft-etica-mono;
+}
+
+.main-nav-link-not-active {
+  color: #c9b7db;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px !important;
+  font-family: lft-etica-mono;
+}*/
 .page-title-two {
   width: 70px;
   text-align: center;

@@ -1,32 +1,3 @@
-/*$mainBackgroundColor: #171629;
-$darkPurpleText: #c9b7db;
-$neonPurple: #8b50e3;*/
-
-.main-nav-link-not-active:hover {
-  color: #8b50e3;
-}
-
-.main-nav-link-active {
-  color: #c9b7db !important;
-  text-decoration: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-bottom: solid;
-  border-color: #8b50e3;
-  padding-bottom: 7px;
-  font-size: 18px !important;
-  font-family: lft-etica-mono;
-}
-
-.main-nav-link-not-active {
-  color: #c9b7db;
-  text-decoration: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 18px !important;
-  font-family: lft-etica-mono;
-}
-
 .App {
   text-align: center;
 }
