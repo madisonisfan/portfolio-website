@@ -1,51 +1,42 @@
 import { Routes, Route } from "react-router-dom";
+import {
+  Container,
+  Row,
+  Col,
+  Carousel,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ButtonDropdown,
+  Button,
+} from "reactstrap";
+import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import ExperiencePage from "./pages/ExperiencePage";
 import ExperienceDetailPage from "./pages/ExperienceDetailPage";
-import Contact from "./pages/ContactPage";
+import ContactColumn from "./components/ContactColumn";
+//import Contact from "./pages/ContactPage";
 import "./App.css";
 
 function App() {
   const { innerWidth: width, innerHeight: height } = window;
+  const [modalOpen, toggleModal] = useState(false);
+
+  const openEmail = () => {
+    console.log(`open email`);
+
+    window.location = "mailto:yourmail@domain.com";
+    /*window.open(
+      "mailto:isfanmadison@gmail.com?subject=Subject&body=Body%20goes%20here"
+    );*/
+  };
 
   return (
     <div className="App app-style" style={{}}>
       <Header />
       <div className="flex-row">
-        <div
-          className="d-flex flex-column d-none d-md-block"
-          style={{
-            backgroundColor: "#171629",
-            width: "50px",
-            position: "fixed",
-            //bottom: height / 2,
-            bottom: "200px",
-          }}
-        >
-          <i
-            className="fa fa-envelope"
-            style={{ color: "#8b50e3", fontSize: "28px" }}
-          />
-          <a
-            href="https://www.linkedin.com/in/madison-isfan/"
-            style={{ color: "#8b50e3" }}
-          >
-            <i
-              className="fa fa-linkedin"
-              style={{ fontSize: "30px", paddingTop: "50px" }}
-            />
-          </a>
-          <a
-            href="https://github.com/madisonisfan"
-            style={{ color: "#8b50e3" }}
-          >
-            <i
-              className="fa fa-github fa-lg"
-              style={{ fontSize: "30px", paddingTop: "50px" }}
-            />
-          </a>
-        </div>
+        <ContactColumn />
         <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -54,12 +45,63 @@ function App() {
               path="experience/:eventId"
               element={<ExperienceDetailPage />}
             />
-            <Route path="contact" element={<Contact />} />
+            {/*<Route path="contact" element={<Contact />} />*/}
           </Routes>
         </div>
       </div>
+      <div
+        style={{
+          color: "#8b50e3",
+          fontSize: 15,
+          paddingBottom: 15,
+          flexDirection: "row",
+        }}
+      >
+        Built by Madison Isfan{" "}
+        <a
+          href="https://github.com/madisonisfan/Portfolio-Website-Simple"
+          style={{ color: "#8b50e3" }}
+        >
+          <i
+            className="fa fa-github fa-lg"
+            style={{ fontSize: "30px", paddingTop: "50px" }}
+          />
+        </a>
+      </div>
     </div>
-    /*
+  );
+}
+
+export default App;
+
+/*
+ <div
+        style={{
+          color: "#8b50e3",
+          fontSize: 15,
+          paddingBottom: 15,
+          flexDirection: "row",
+        }}
+      >
+        Built by Madison Isfan{" "}
+        <a
+          href="https://github.com/madisonisfan/Portfolio-Website-Simple"
+          style={{ color: "#8b50e3" }}
+        >
+          <i
+            className="fa fa-github fa-lg"
+            style={{ fontSize: "30px", paddingTop: "50px" }}
+          />
+        </a>
+      </div>
+
+*/
+
+/*
+
+      <ModalHeader className="email-modal-header">
+          Send me an email!
+        </ModalHeader>
     <div className="App app-style">
       <Header />
       <Routes>
@@ -69,10 +111,6 @@ function App() {
         <Route path="contact" element={<Contact />} />
       </Routes>
     </div>*/
-  );
-}
-
-export default App;
 
 /*
 <Routes>

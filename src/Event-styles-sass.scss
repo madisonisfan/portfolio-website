@@ -2,6 +2,7 @@
 $mainBackgroundColor: #171729;
 $darkPurpleText: #c9b7db;
 
+$xsOne: 500px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -9,6 +10,281 @@ $xl: 1200px;
 
 $customXL: 1400px;
 //$betweenSMandMD: 730px;
+
+.read-more-butt {
+  background-color: transparent;
+  border: none;
+  color: $darkPurpleText;
+  border-bottom: solid 1px;
+  padding: 0;
+}
+
+.event-page {
+  height: 100%;
+  background-color: $mainBackgroundColor;
+}
+
+//EVENT DETAIL
+.event-detail-page {
+  //not sure why i had to do this here too???
+  height: 100vh;
+}
+.event-description {
+  font-weight: 400;
+  color: $darkPurpleText;
+  // width: 70%;
+}
+
+/*
+.event-description-point {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.event-description-points {
+  text-align: left;
+  //list-style: none;
+}*/
+
+@media only screen and (min-width: $sm) {
+  .event-title {
+    //font-weight: bold;
+    font-weight: 400;
+    font-size: 20px !important;
+    text-align: left;
+    color: $darkPurpleText;
+    //padding-bottom: 10px;
+  }
+  .event-subtitle {
+    text-align: left;
+    padding-bottom: 10px;
+    //color: #8b50e3;
+    color: $darkPurpleText;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #000000;
+    //font-family: "Courier New", Courier, monospace;
+  }
+
+  //EVENT DATE
+  .event-date {
+    text-align: left;
+    // color: #8b50e3;
+    color: $darkPurpleText;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #000000;
+    //font-family: "Courier New", Courier, monospace;
+  }
+}
+
+//MAX SM :  VP < 576
+@media only screen and (max-width: $sm) {
+  .card.event-card {
+    min-height: 340px;
+    background-color: #282646;
+    //background-color: $mainBackgroundColor;
+    margin-bottom: 100px;
+  }
+
+  /*
+  .read-more-butt {
+    border-bottom: solid 1px;
+  }*/
+
+  .event-page {
+    //max-width: 80% !important;
+  }
+
+  .event-description {
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .event-title {
+    font-weight: 500;
+    font-size: 20px !important;
+    text-align: left;
+    color: white;
+  }
+  .event-subtitle {
+    //text-align: left;
+    padding-bottom: 10px;
+    //color: #8b50e3;
+    color: $darkPurpleText;
+    font-weight: 500;
+    // text-shadow: 1px 1px 1px #000000;
+    //font-family: "Courier New", Courier, monospace;
+  }
+
+  //EVENT DATE
+  .event-date {
+    //text-align: left;
+    // color: #8b50e3;
+    color: $darkPurpleText;
+    font-weight: 500;
+    //text-shadow: 1px 1px 1px #000000;
+    //font-family: "Courier New", Courier, monospace;
+  }
+}
+
+//BETWEEN SM AND MD
+@media only screen and (min-width: $sm) and (max-width: $md) {
+  .card.event-card {
+    min-height: 360px;
+    background-color: #282646;
+    //background-color: $mainBackgroundColor;
+    margin-bottom: 150px;
+  }
+}
+
+//BETWEEN MD AND LG
+@media only screen and (min-width: $md) and (max-width: $lg) {
+  .card.event-card {
+    min-height: 305px;
+    background-color: #282646;
+    //background-color: $mainBackgroundColor;
+    margin-bottom: 150px;
+  }
+
+  .event-page {
+    max-width: 80% !important;
+  }
+}
+
+@media only screen and (min-width: $sm) and (max-width: $lg) {
+  .event-page {
+    max-width: 80% !important;
+  }
+  .event-description {
+    margin-top: 10px;
+    //background-color: #282646;
+    //color: $darkPurpleText;
+    text-align: left;
+
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 20px;
+  }
+
+  .event-card-overlay {
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    //height: 400px;
+  }
+}
+
+//BELOW LG
+@media only screen and (max-width: $lg) {
+  .event-image {
+    display: none;
+  }
+  /*.read-more-butt {
+    border-bottom: solid 1px;
+  }*/
+}
+
+//MD & UP
+@media only screen and (min-width: $lg) {
+  .event-page {
+    max-width: 70% !important;
+  }
+  .event-card-overlay {
+    padding: 0;
+    background-color: rgb(23, 23, 41, 0.7);
+    //height: 500px !im;
+    //padding: 35px;
+    //margin-bottom: 100px;
+    // margin-bottom: 200px !important;
+  }
+  .event-card-overlay:hover {
+    padding: 0;
+    background-color: rgb(23, 23, 41, 0);
+    //height: 500px !im;
+    //padding: 35px;
+    //margin-bottom: 100px;
+    // margin-bottom: 200px !important;
+  }
+
+  .card.event-card {
+    min-height: 400px;
+    margin-bottom: 80px;
+    border: none;
+    color: white;
+    //max-height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $mainBackgroundColor;
+  } /*background-color: #1c1a30;*/
+  .event-image {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    //height: auto;
+    //width: 300px !important;
+    // height: 200px;
+    //width: auto !important;
+
+    opacity: 0.5;
+  }
+
+  //being ignored rn bc of styles in the eventdisplay file
+  .event-row {
+    align-items: center;
+  }
+  .event-description {
+    margin-top: 10px;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 30px;
+    text-align: left;
+    // marginRight: id % 2 == 0 ? "30%" : "0",
+    // marginLeft: id % 2 == 0 ? "0" : "30%",
+  }
+}
+
+@media only screen and (min-width: $customXL) {
+  .event-image-simple {
+    display: block;
+  }
+  .event-tech-list {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: $customXL) {
+  .event-image-simple {
+    display: none;
+  }
+  .event-tech-list {
+    display: none;
+  }
+
+  .read-more-butt {
+    margin-top: 10px;
+  }
+}
+
+//EVENT TITLE
+
+//EVENT TECH
+.event-tech-list {
+  text-align: left;
+  padding: 0;
+}
+.event-tech {
+  //color: #8b50e3;
+  color: $darkPurpleText;
+  font-weight: 300;
+  padding-top: 0px;
+  display: inline;
+  //padding-right: 20px;
+  text-shadow: 1px 1px 1px #000000;
+  //font-family: "Courier New", Courier, monospace;
+}
+
+/*
 
 // SIMPLE
 .experience-mainTitle-simple {
@@ -87,212 +363,5 @@ $customXL: 1400px;
   //text-shadow: 1px 1px 1px #000000;
 }
 
-@media only screen and (min-width: $customXL) {
-  .event-image-simple {
-    display: block;
-  }
-  .event-tech-list {
-    display: block;
-  }
-}
 
-@media only screen and (max-width: $customXL) {
-  .event-image-simple {
-    display: none;
-  }
-  .event-tech-list {
-    display: none;
-  }
-}
-
-// END OF SIMPLE
-
-.event-page {
-  height: 100%;
-  background-color: $mainBackgroundColor;
-}
-
-//EVENT DETAIL
-
-.event-detail-page {
-  //not sure why i had to do this here too???
-  height: 100vh;
-}
-
-.event-description {
-  font-weight: 400;
-  // width: 70%;
-}
-
-/*
-.event-description-point {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.event-description-points {
-  text-align: left;
-  //list-style: none;
-}*/
-
-@media only screen and (max-width: $sm) {
-  .card.event-card {
-    min-height: 450px;
-    background-color: #282646;
-    //background-color: $mainBackgroundColor;
-    margin-bottom: 150px;
-  }
-}
-
-@media only screen and (min-width: $sm) and (max-width: $md) {
-  .card.event-card {
-    min-height: 400px;
-    background-color: #282646;
-    //background-color: $mainBackgroundColor;
-    margin-bottom: 150px;
-  }
-}
-
-@media only screen and (min-width: $md) and (max-width: $lg) {
-  .card.event-card {
-    min-height: 350px;
-    background-color: #282646;
-    //background-color: $mainBackgroundColor;
-    margin-bottom: 150px;
-  }
-}
-
-//BETWEEN SM AND LG
-@media only screen and (max-width: $lg) {
-  .event-page {
-    max-width: 80% !important;
-  }
-
-  .event-image {
-    display: none;
-  }
-  .event-description {
-    margin-top: 10px;
-    //background-color: #282646;
-    //color: $darkPurpleText;
-    text-align: left;
-
-    background-color: #404040;
-    color: rgb(206, 205, 205);
-    padding: 20px;
-  }
-
-  .event-card-overlay {
-    padding: 35px;
-    margin-top: auto;
-    margin-bottom: auto;
-    //height: 400px;
-  }
-}
-
-//MD & UP
-@media only screen and (min-width: $lg) {
-  .event-page {
-    max-width: 70% !important;
-  }
-  .event-card-overlay {
-    padding: 0;
-    background-color: rgb(23, 23, 41, 0.7);
-    //height: 500px !im;
-    //padding: 35px;
-    //margin-bottom: 100px;
-    // margin-bottom: 200px !important;
-  }
-  .event-card-overlay:hover {
-    padding: 0;
-    background-color: rgb(23, 23, 41, 0);
-    //height: 500px !im;
-    //padding: 35px;
-    //margin-bottom: 100px;
-    // margin-bottom: 200px !important;
-  }
-
-  .card.event-card {
-    min-height: 400px;
-    margin-bottom: 80px;
-    border: none;
-    color: white;
-    //max-height: 350px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: $mainBackgroundColor;
-  } /*background-color: #1c1a30;*/
-  .event-image {
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    //height: auto;
-    //width: 300px !important;
-    // height: 200px;
-    //width: auto !important;
-
-    opacity: 0.5;
-  }
-
-  //being ignored rn bc of styles in the eventdisplay file
-  .event-row {
-    align-items: center;
-  }
-  .event-description {
-    margin-top: 10px;
-    background-color: #404040;
-    color: rgb(206, 205, 205);
-    padding: 30px;
-    text-align: left;
-    // marginRight: id % 2 == 0 ? "30%" : "0",
-    // marginLeft: id % 2 == 0 ? "0" : "30%",
-  }
-}
-
-.event-subtitle {
-  text-align: left;
-  padding-bottom: 10px;
-  //color: #8b50e3;
-  color: $darkPurpleText;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px #000000;
-  //font-family: "Courier New", Courier, monospace;
-}
-
-//EVENT TITLE
-.event-title {
-  //font-weight: bold;
-  font-weight: 400;
-  font-size: 20px !important;
-  text-align: left;
-  color: $darkPurpleText;
-  //padding-bottom: 10px;
-}
-
-//EVENT TECH
-.event-tech-list {
-  text-align: left;
-  padding: 0;
-}
-.event-tech {
-  //color: #8b50e3;
-  color: $darkPurpleText;
-  font-weight: 300;
-  padding-top: 0px;
-  display: inline;
-  //padding-right: 20px;
-  text-shadow: 1px 1px 1px #000000;
-  //font-family: "Courier New", Courier, monospace;
-}
-
-//EVENT DATE
-.event-date {
-  text-align: left;
-  // color: #8b50e3;
-  color: $darkPurpleText;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px #000000;
-  //font-family: "Courier New", Courier, monospace;
-}
+*/

@@ -6,44 +6,117 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
+  Modal,
+  ModalBody,
   Button,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [modalOpen, toggleModal] = useState(false);
 
   return (
-    <Navbar sticky="top" expand="md">
-      <NavbarBrand className="ms-5" href="/">
-        <h1 className="mt-1">[MI]</h1>
-      </NavbarBrand>
-      <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-      <Collapse isOpen={menuOpen} navbar>
-        <Nav className="ms-auto" navbar>
-          <NavItem>
-            <NavLink
-              //className="nav-link"
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
-              }
-            >
-              Home
-            </NavLink>
-          </NavItem>
+    <>
+      <Navbar sticky="top" expand="md">
+        <NavbarBrand className="ms-sm-5" href="/">
+          <h1 className="mt-1">[MI]</h1>
+        </NavbarBrand>
+        <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}>
+          <i
+            className="fa fa-bars"
+            style={{ color: "#c9b7db", fontSize: "28px" }}
+          />
+        </NavbarToggler>
+        <Collapse isOpen={menuOpen} navbar>
+          <Nav className="ms-auto" navbar>
+            <NavItem>
+              <NavLink
+                //className="nav-link"
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+                }
+              >
+                Home
+              </NavLink>
+            </NavItem>
 
-          <NavItem style={{ alignItems: "center" }}>
-            <NavLink
-              to="/experience"
-              className={({ isActive }) =>
-                isActive ? "main-nav-link-active" : "main-nav-link-not-active"
-              }
+            <NavItem style={{ alignItems: "center" }}>
+              <NavLink
+                to="/experience"
+                className={({ isActive }) =>
+                  isActive ? "main-nav-link-active" : "main-nav-link-not-active"
+                }
+              >
+                Experience
+              </NavLink>
+            </NavItem>
+          </Nav>
+          <div
+            className="d-block d-md-none"
+            style={{ flexDirection: "row", paddingTop: 15 }}
+          >
+            <Button
+              outline
+              onClick={() => toggleModal(!modalOpen)}
+              style={{
+                borderColor: "#171729",
+                //padding: 0,
+                marginRight: 10,
+                paddingBottom: 15,
+              }}
             >
-              Experience
-            </NavLink>
-          </NavItem>
-          <NavItem
+              <i
+                className="fa fa-envelope"
+                style={{ color: "#8b50e3", fontSize: "28px" }}
+              />
+            </Button>
+
+            <a
+              href="https://www.linkedin.com/in/madison-isfan/"
+              style={{ color: "#8b50e3", marginRight: 20 }}
+            >
+              <i className="fa fa-linkedin" style={{ fontSize: "30px" }} />
+            </a>
+
+            <a
+              href="https://github.com/madisonisfan"
+              style={{ color: "#8b50e3", marginRight: 20 }}
+            >
+              <i className="fa fa-github fa-lg" style={{ fontSize: "30px" }} />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCuTP6I1OS2lGOI8Qq4CD3VA"
+              style={{ color: "#8b50e3", marginRight: 20 }}
+            >
+              <i
+                className="fa fa-youtube-play fa-lg"
+                style={{ fontSize: "30px" }}
+              />
+            </a>
+          </div>
+        </Collapse>
+      </Navbar>
+      <Modal
+        isOpen={modalOpen}
+        toggle={() => toggleModal(!modalOpen)}
+        className="email-modal"
+        centered
+      >
+        <ModalBody className="email-modal-body">
+          <a href="mailto:yourmail@domain.com" className="email-link">
+            isfanmadison@gmail.com
+          </a>
+        </ModalBody>
+      </Modal>
+    </>
+  );
+};
+
+/*
+
+  <NavItem
             style={{ alignItems: "center" }}
             className="d-block d-md-none"
           >
@@ -56,11 +129,8 @@ const Header = () => {
               Contact
             </NavLink>
           </NavItem>
-        </Nav>
-      </Collapse>
-    </Navbar>
-  );
-};
+
+*/
 
 /*
     <NavItem>

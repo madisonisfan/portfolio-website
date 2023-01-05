@@ -13,6 +13,9 @@ import "typeface-open-sans";
 import { EventImageCarousel } from "./features/experience/Complex/EventImageCarousel";
 import "./Event-styles-sass.scss";
 import "./Home-styles-sass.scss";
+import "./Extra-styles-sass.scss";
+import "./TrainrAI-styles-sass.scss";
+//import "~video-react/dist/video-react.css";
 import "./contact-styles-sass.scss";
 import "./Styles-sass.scss";
 

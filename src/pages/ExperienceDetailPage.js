@@ -3,6 +3,7 @@ import { PageTitle } from "../components/PageTitle";
 import { useParams } from "react-router-dom";
 import { EVENTS } from "../app/shared/experienceEvents";
 import { EventDetail } from "../features/experience/Complex/EventDetail";
+import PageTitleThree from "../components/PageTitle3";
 
 const ExperienceDetailPage = () => {
   const { eventId } = useParams();
@@ -12,7 +13,7 @@ const ExperienceDetailPage = () => {
   if (event) {
     content = (
       <>
-        <PageTitle pageTitle={event.title} />
+        <PageTitleThree pageTitle={event.title} />
         <EventDetail event={event} />
       </>
     );

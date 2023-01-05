@@ -6,21 +6,39 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
+.show-more-butt {
+  background-color: #404040;
+  color: $darkPurpleText;
+  border: none;
+  text-align: center;
+  width: 100%;
+}
+
+.description-box-home {
+  margin-top: 10px;
+  text-align: left;
+  background-color: #404040;
+  color: rgb(206, 205, 205);
+  margin-bottom: 20px;
+}
+
 .home-page-div {
   background-color: $mainBackgroundColor;
-  height: 100vh;
+  //height: 100vh;
   align-items: center;
   //justify-content: center;
   // padding-top: 80px;
   //font-size: 20px;
   //padding-top: 20px;
+  //padding-bottom: 75px;
 }
 
 .home-page-container {
   //background-color: $mainBackgroundColor;
   // height: 100vh;
   align-items: center;
-  margin-top: auto;
+  //margin-top: auto;
+  margin-top: 10%;
   margin-bottom: auto;
 }
 

@@ -11,12 +11,18 @@ import { PageTitle } from "../components/PageTitle";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Seperator from "../components/Seperator";
+import Resume from "../app/assets/pdfs/resume_version4.pdf";
+import PageTitleThree from "../components/PageTitle3";
+import MainPageTrainrAI from "../features/home/MainPageTrainrAI";
 
 const HomePage = () => {
   const [isContactModalOpen, toggleContactModal] = useState(false);
+  const openResume = () => {
+    window.open(Resume);
+  };
 
   return (
-    <div className="home-page-div d-flex ">
+    <div className="home-page-div">
       <Container fluid className="home-page-container">
         <Row className="top-subtitle">
           <Col>Hello, World! My name is</Col>
@@ -33,13 +39,14 @@ const HomePage = () => {
               className="home-button"
               style={{ justifyContent: "center" }}
             >
-              <div className="d-flex">
+              <div className="d-flex" onClick={() => window.open(Resume)}>
                 <Seperator /> Resume <Seperator />
               </div>
             </Button>
           </Col>
         </Row>
       </Container>
+      <MainPageTrainrAI />
     </div>
   );
 };

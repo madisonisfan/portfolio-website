@@ -7,7 +7,7 @@ import PageTitleThree from "../components/PageTitle3";
 
 const ExperiencePage = () => {
   return (
-    <Container className="event-page">
+    <Container fluid className="event-page">
       <PageTitleThree pageTitle="Experience" />
       <ExperienceEvents />
     </Container>

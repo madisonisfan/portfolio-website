@@ -1,0 +1,56 @@
+$mainBackgroundColor: #171729;
+$darkPurpleText: #c9b7db;
+
+$xsOne: 500px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+.tAI-box {
+  margin-bottom: 75px;
+}
+
+.tAI-subtitle {
+  font-weight: 400;
+  // font-size: 20px !important;
+  font-size: 25px !important;
+  text-align: left;
+  color: $darkPurpleText;
+}
+
+.tAI-description {
+  margin-top: 10px;
+  text-align: left;
+  background-color: #404040;
+  color: rgb(206, 205, 205);
+  padding: 20px;
+}
+
+//CONTAINER
+
+.tAI-container {
+  margin-top: 100px;
+  //height: 100vh;
+}
+
+//BETWEEN SM AND LG
+@media only screen and (min-width: $sm) and (max-width: $lg) {
+  .tAI-container {
+    max-width: 80% !important;
+  }
+}
+
+//BETWEEN MD AND LG
+@media only screen and (min-width: $md) and (max-width: $lg) {
+  .tAI-container {
+    max-width: 80% !important;
+  }
+}
+
+//LG AND UP
+@media only screen and (min-width: $lg) {
+  .tAI-container {
+    max-width: 70% !important;
+  }
+}

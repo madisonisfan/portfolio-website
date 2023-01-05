@@ -1,0 +1,35 @@
+$mainBackgroundColor: #171729;
+$darkPurpleText: #c9b7db;
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+.modal-content {
+  background-color: $mainBackgroundColor !important;
+  border-radius: 5;
+  align-items: center;
+}
+
+.email-modal {
+  color: $darkPurpleText;
+}
+
+.email-modal-header {
+  background-color: $mainBackgroundColor !important;
+  border-color: $mainBackgroundColor !important;
+  text-align: center;
+}
+
+.email-modal-body {
+  background-color: $mainBackgroundColor !important;
+  border-color: $mainBackgroundColor !important;
+  color: $darkPurpleText;
+}
+
+.email-link {
+  color: $darkPurpleText;
+}
+
+//style={{ background: "#171729", borderColor: "#171729"  }}
