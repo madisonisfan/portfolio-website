@@ -9,7 +9,7 @@ export const TRAINRAI_POINTS = [
     id: 0,
     title: "Summary",
     textPoints: [
-      "I applied for and was accepted into Founder University, a 12-week startup course and challenge. I created an Apple Watch, and iPhone App called 90PerfectDays to help people build healthy habits through challenges and streaks and launched it on time. This was my first mobile app!",
+      "I applied for and was accepted into Founder University, a 12-week startup course and challenge. I created an Apple Watch and iPhone App called 90PerfectDays to help people build healthy habits through challenges and streaks and launched it on time. This was my first mobile app!",
       "I learned about startups, MVPs, SwiftUI, Xcode, iCloud, testing, and other useful tools like Trello and built and tested the entire system from the ground up. I launched the app to a group of 50 Beta Testers through Testflight before the end of the program. I also gathered valuable feedback, which I folded into new releases of the app.",
     ],
     text: "I applied for and was accepted into Founder University, a 12-week startup course and challenge. I created an Apple Watch and iPhone App called 90PerfectDays to help people build healthy habits through challenges and streaks and launched it on time. This was my first mobile app!I learned about startups, MVPs, SwiftUI, Xcode, iCloud, testing and other useful tools like Trello and built and tested the entire system from the ground up. I launched the app to a group of 50 Beta Testers through Testflight before the end of the program and gathered valuable feedback which I folded into new releases of the app.",
