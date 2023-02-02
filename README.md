@@ -7,11 +7,12 @@ This is a simple portfolio website to display my education, experience, and skil
 
 # Current Features
 - Experience: On this page, all of my coding experience is displayed, including work and education. At the moment, I am creating pages that provide more details about each experience. 
+- Contact: On the left side of the screen there a some contact buttons: email, LinkedIn, GitHub, and YouTube
+- Resume: My resume is linked on the home page
 
 # Future Features
 - About: This page will talk a little about myself and my programming journey
-- Contact: This page will display my contact information, and may have a contact form
-- Resume: My resume will be linked somewhere on my website 
+
 
 
 ## Technologies
