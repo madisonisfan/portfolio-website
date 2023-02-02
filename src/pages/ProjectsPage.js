@@ -4,7 +4,7 @@ import ProjectList from "../features/projects/ProjectList";
 
 const ProjectsPage = () => {
   return (
-    <Container className="page-container">
+    <Container fluid className="project-page-container">
       <PageTitleThree pageTitle="Projects" />
       <ProjectList />
     </Container>

@@ -1,6 +1,6 @@
 import { Row, Col } from "reactstrap";
 import { PROJECTS } from "../../app/shared/projects";
-import ProjectDisplay from "./projectDisplay";
+import ProjectDisplay from "./ProjectDisplay";
 
 const ProjectList = () => {
   return (

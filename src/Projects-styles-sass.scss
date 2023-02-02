@@ -5,7 +5,207 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
+$customXL: 1400px;
 
-.page-container {
-  height: 100vh;
+.project-page-container {
+  height: 100%;
+}
+
+//PROJECT DISPLAY EXTRA:
+.read-more-butt {
+  background-color: transparent;
+  border: none;
+  color: $darkPurpleText;
+  border-bottom: solid 1px;
+  padding: 0;
+}
+
+.project-description {
+  font-weight: 400;
+  color: $darkPurpleText;
+}
+
+//MAX: SM
+@media only screen and (max-width: $sm) {
+  .card.event-card {
+    min-height: 340px;
+    background-color: #282646;
+    margin-bottom: 100px;
+  }
+
+  .project-description {
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .project-title {
+    font-weight: 500;
+    font-size: 20px !important;
+    text-align: left;
+    color: white;
+  }
+  .project-subtitle {
+    padding-bottom: 10px;
+    color: $darkPurpleText;
+    font-weight: 500;
+  }
+}
+
+//MIN: SM
+@media only screen and (min-width: $sm) {
+  .project-title {
+    font-weight: 400;
+    font-size: 20px !important;
+    text-align: left;
+    color: $darkPurpleText;
+  }
+  .project-subtitle {
+    text-align: left;
+    padding-bottom: 10px;
+    color: $darkPurpleText;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #000000;
+  }
+}
+
+//BETWEEN SM & MD
+@media only screen and (min-width: $sm) and (max-width: $md) {
+  .card.project-card {
+    min-height: 360px;
+    background-color: #282646;
+    margin-bottom: 150px;
+  }
+}
+
+//BETWEEN MD & LG
+@media only screen and (min-width: $md) and (max-width: $lg) {
+  .card.project-card {
+    min-height: 305px;
+    background-color: #282646;
+    margin-bottom: 150px;
+  }
+
+  /*
+  think I can remove this because of the one below 
+  .project-page-container {
+    max-width: 80% !important;
+  }*/
+}
+
+//BETWEEN SM & LG
+@media only screen and (min-width: $sm) and (max-width: $lg) {
+  .project-page-container {
+    max-width: 80% !important;
+  }
+  .project-description {
+    margin-top: 10px;
+    text-align: left;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 20px;
+  }
+
+  .project-card-overlay {
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+//MAX: LG
+@media only screen and (max-width: $lg) {
+  .project-image {
+    display: none;
+  }
+}
+
+//MIN: MD
+@media only screen and (min-width: $lg) {
+  .project-page-container {
+    max-width: 70% !important;
+  }
+  //make sure there is a class with this name in projectDisplay
+  .project-card-img-overlay {
+    padding: 0;
+    background-color: rgb(23, 23, 41, 0.7);
+  }
+  //make sure there is a class with this name in projectDisplay
+  .project-card-img-overlay:hover {
+    padding: 0;
+    background-color: rgb(23, 23, 41, 0);
+  }
+
+  .card.project-card {
+    min-height: 400px;
+    margin-bottom: 80px;
+    border: none;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $mainBackgroundColor;
+  }
+  .project-image {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    opacity: 0.5;
+  }
+
+  .project-row {
+    align-items: center;
+  }
+  .project-description {
+    margin-top: 10px;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 30px;
+    text-align: left;
+  }
+}
+
+//MIN: CUSTOM XL (1400PX)
+@media only screen and (min-width: $customXL) {
+  .project-image-simple {
+    display: block;
+  }
+  /*
+  .event-tech-list {
+    display: block;
+  }*/
+}
+
+//MAX: CUSTOM XL (1400PX)
+@media only screen and (max-width: $customXL) {
+  .project-image-simple {
+    display: none;
+  }
+  /*
+  .event-tech-list {
+    display: none;
+  }*/
+
+  .read-more-butt {
+    margin-top: 10px;
+  }
+}
+
+.project-card {
+}
+
+.project-image {
+}
+
+.project-card-img-overlay {
+}
+
+.project-title {
+}
+
+.project-description {
+}
+
+.read-more-button {
 }
