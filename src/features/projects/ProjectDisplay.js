@@ -2,9 +2,11 @@ import Card from "react-bootstrap/Card";
 import { Container, Row, Col } from "reactstrap";
 import { useState, useEffect } from "react";
 import Image from "react-bootstrap/Image";
+import Seperator from "../../components/Seperator";
 
 const ProjectDisplay = ({ project }) => {
-  const { id, title, description, images } = project;
+  const { id, title, description, images, mainTechnology } = project;
+  console.log(`project: `, mainTechnology);
   const [belowLg, setBelowLg] = useState(false);
 
   const styles = {
@@ -22,11 +24,11 @@ const ProjectDisplay = ({ project }) => {
     projectTitle: {
       justifyContent: belowLg ? "start" : id % 2 == 0 ? "end" : "start",
     },
-    /*
-    projectTechList: {
+
+    projectMainTechList: {
       justifyContent: id % 2 == 0 ? "end" : "start",
       marginTop: "10px",
-    },*/
+    },
     projectDescriptionRow: {
       justifyContent: id % 2 == 0 ? "end" : "start",
     },
@@ -75,6 +77,17 @@ const ProjectDisplay = ({ project }) => {
     };
   }, []);
 
+  const mainTech = mainTechnology.map((tech) => {
+    console.log(`tech`, tech);
+    return (
+      <li className="project-tech">
+        <div className="d-flex">
+          {tech} <Seperator />
+        </div>
+      </li>
+    );
+  });
+
   return (
     <Card className="project-card">
       <Image
@@ -118,14 +131,14 @@ const ProjectDisplay = ({ project }) => {
                 </Col>
               </Row>
 
-              {/*<ul className="event-tech-list">
+              <ul className="project-main-tech-list">
                 <div
-                  className="d-flex event-tech-list"
-                  style={styles.eventTechList}
+                  className="d-flex project-main-tech-list"
+                  style={styles.projectMainTechList}
                 >
-                  <Seperator /> {tech}
+                  <Seperator /> {mainTech}
                 </div>
-</ul>*/}
+              </ul>
               <Row style={styles.readMoreButtonRow}>
                 <Col xs={5}>
                   {" "}

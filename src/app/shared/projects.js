@@ -11,7 +11,7 @@ export const PROJECTS = [
     description:
       "After particapting in Founder University, I built and then launched trainrAI to a group of testers. trainAI is a iOS app created to help people build healthy habits and improve thier lifestyles. ",
     images: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
-    technology: ["SwiftUI", "Core Data", "CloudKit"],
+    mainTechnology: ["SwiftUI", "Core Data", "CloudKit"],
     allTechnology: ["SwiftUI", "Core Data", "CloudKit", "GitHub", "Xcode"],
     descriptionPoints: [
       "Created an iOS app in SwiftUI that helps people build healthy habits",
@@ -59,6 +59,9 @@ export const PROJECTS = [
     images: [TestImage, TestImage],
     gitHubLink: "",
     //youtubelink
+    mainTechnology: ["Swift", "SwiftUI"],
+    allTechnology: ["Swift", "SwiftUI", "Xcode"],
+    mainTechnology: ["Swift", "SwiftUI"],
     descriptionPoints: [
       "On YouTube I posted a two part tutorial for this project.",
       "The first step was to style. Given that I was using SwiftUI, it was pretty easy to retrieve the correct colors and icon.",

@@ -25,6 +25,18 @@ $customXL: 1400px;
   color: $darkPurpleText;
 }
 
+.project-tech-list {
+  text-align: left;
+  padding: 0;
+}
+.project-tech {
+  color: $darkPurpleText;
+  font-weight: 300;
+  padding-top: 0px;
+  display: inline;
+  text-shadow: 1px 1px 1px #000000;
+}
+
 //MAX: SM
 @media only screen and (max-width: $sm) {
   .card.event-card {
@@ -171,10 +183,10 @@ $customXL: 1400px;
   .project-image-simple {
     display: block;
   }
-  /*
-  .event-tech-list {
+
+  .project-main-tech-list {
     display: block;
-  }*/
+  }
 }
 
 //MAX: CUSTOM XL (1400PX)
@@ -182,10 +194,10 @@ $customXL: 1400px;
   .project-image-simple {
     display: none;
   }
-  /*
-  .event-tech-list {
+
+  .project-main-tech-list {
     display: none;
-  }*/
+  }
 
   .read-more-butt {
     margin-top: 10px;
