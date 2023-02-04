@@ -4,12 +4,19 @@ import { useState, useEffect } from "react";
 import Image from "react-bootstrap/Image";
 import Seperator from "../../components/Seperator";
 import ProjectDetailModal from "./ProjectDetailModal";
+import { useSpring, animated, to } from "@react-spring/web";
+import { useGesture } from "react-use-gesture";
 
 const ProjectDisplay = ({ project }) => {
   const { id, title, description, images, mainTechnology } = project;
-  console.log(`project: `, mainTechnology);
+  const [toggleState, toggle] = useState(true);
   const [belowLg, setBelowLg] = useState(false);
   const [isDetailModalOpen, toggleDetailModal] = useState(false);
+
+  const [{ scale }, api] = useSpring(() => ({
+    scale: 1,
+    //config: { mass: 5, tension: 350, friction: 40 }
+  }));
 
   const styles = {
     projectImage: {
@@ -92,78 +99,95 @@ const ProjectDisplay = ({ project }) => {
 
   return (
     <>
-      <Card
-        className="project-card"
-        onClick={() => toggleDetailModal(!isDetailModalOpen)}
+      <animated.div
+        onMouseOver={() => {
+          if (window.innerWidth > 576) {
+            api({ scale: 1.1 });
+          }
+        }}
+        onMouseOut={() => {
+          if (window.innerWidth > 576) {
+            api({ scale: 1 });
+          }
+        }}
+        style={{
+          scale: to([scale], (s) => s),
+        }}
+        // style={{ scale: to([scale, zoom], (s, z) => s + z) }}
       >
-        <Image
-          src={images[0]}
-          className="project-image"
-          style={styles.projectImage}
-          rounded
-        />
-        <Card.ImgOverlay className="project-card-img-overlay">
-          <Container className="p-0" styles={styles.projectOverlay}>
-            <Row style={styles.projectRow}>
-              <Col xs={12}>
-                <div
-                  className="project-title d-flex"
-                  style={styles.projectTitle}
-                >
-                  <div className="d-none d-sm-block">|</div>
+        <Card
+          className="project-card "
+          onClick={() => toggleDetailModal(!isDetailModalOpen)}
+        >
+          <Image
+            src={images[0]}
+            className="project-image"
+            style={styles.projectImage}
+            rounded
+          />
+          <Card.ImgOverlay className="project-card-img-overlay hover-zoom">
+            <Container className="p-0" styles={styles.projectOverlay}>
+              <Row style={styles.projectRow}>
+                <Col xs={12}>
                   <div
-                    className="ps-0 ps-sm-3 pe-3"
-                    style={{ paddingTop: "2px" }}
+                    className="project-title d-flex"
+                    style={styles.projectTitle}
                   >
-                    <p>{title}</p>
+                    <div className="d-none d-sm-block">|</div>
+                    <div
+                      className="ps-0 ps-sm-3 pe-3"
+                      style={{ paddingTop: "2px" }}
+                    >
+                      <p>{title}</p>
+                    </div>
+                    <div className="d-none d-sm-block"> | </div>
                   </div>
-                  <div className="d-none d-sm-block"> | </div>
-                </div>
 
-                {/*<Card.Subtitle
+                  {/*<Card.Subtitle
                 className="project-subtitle"
                 style={styles.projectSubtitle}
               >
                 {subtitle}
   </Card.Subtitle>*/}
-                {/*<Card.Subtitle className="event-date" style={styles.eDate}>
+                  {/*<Card.Subtitle className="event-date" style={styles.eDate}>
                 {dateRange}
   </Card.Subtitle>*/}
-                <Row className="d-flex" style={styles.projectDescriptionRow}>
-                  <Col lg={8}>
-                    <Card.Text
-                      className="project-description"
-                      style={styles.projectDescriptionText}
-                    >
-                      {description}
-                    </Card.Text>
-                  </Col>
-                </Row>
+                  <Row className="d-flex" style={styles.projectDescriptionRow}>
+                    <Col lg={8}>
+                      <Card.Text
+                        className="project-description"
+                        style={styles.projectDescriptionText}
+                      >
+                        {description}
+                      </Card.Text>
+                    </Col>
+                  </Row>
 
-                <ul className="project-main-tech-list">
-                  <div
-                    className="d-flex project-main-tech-list"
-                    style={styles.projectMainTechList}
-                  >
-                    <Seperator /> {mainTech}
-                  </div>
-                </ul>
-                <Row style={styles.readMoreButtonRow}>
-                  <Col xs={5}>
-                    {" "}
-                    <button
-                      className="read-more-butt"
-                      onClick={() => toggleDetailModal(true)}
+                  <ul className="project-main-tech-list">
+                    <div
+                      className="d-flex project-main-tech-list"
+                      style={styles.projectMainTechList}
                     >
-                      Read More
-                    </button>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Container>
-        </Card.ImgOverlay>
-      </Card>
+                      <Seperator /> {mainTech}
+                    </div>
+                  </ul>
+                  <Row style={styles.readMoreButtonRow}>
+                    <Col xs={5}>
+                      {" "}
+                      <button
+                        className="read-more-butt"
+                        onClick={() => toggleDetailModal(true)}
+                      >
+                        Read More
+                      </button>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+          </Card.ImgOverlay>
+        </Card>
+      </animated.div>
       <Modal
         returnFocusAfterClose
         centered

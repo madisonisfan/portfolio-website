@@ -83,7 +83,7 @@ $customXL: 1400px;
 //BETWEEN SM & MD
 @media only screen and (min-width: $sm) and (max-width: $md) {
   .card.project-card {
-    min-height: 320px;
+    min-height: 330px;
     background-color: #282646;
     margin-bottom: 150px;
   }
@@ -96,6 +96,16 @@ $customXL: 1400px;
     background-color: #282646;
     margin-bottom: 150px;
   }
+
+  /*
+  .card.project-card:hover {
+    transform: scale(1.1);
+  }*/
+
+  /*
+  .card.project-card:hover {
+    transform: scale(1.1);
+  }*/
 
   /*
   think I can remove this because of the one below 
