@@ -1,6 +1,7 @@
 import PageTitleThree from "../../components/PageTitle3";
 import SimpleHomePoint from "./SmallView";
 import LargePointView from "./LargeView";
+import HomeMediumPoint from "./HomeMedView";
 import { TRAINRAI_POINTS } from "../../app/shared/trainrAI_info";
 import { Container, Row, Col } from "reactstrap";
 import Image from "react-bootstrap/Image";
@@ -16,6 +17,7 @@ const MainPageTrainrAI = () => {
             <div className="d-block d-md-none">
               <SimpleHomePoint point={point} />
             </div>
+
             <div className="d-none d-md-block">
               <LargePointView point={point} />
             </div>
@@ -25,6 +27,18 @@ const MainPageTrainrAI = () => {
     </Container>
   );
 };
+
+/*
+<div className="d-block d-md-none">
+              <SimpleHomePoint point={point} />
+            </div>
+            <div className="d-none d-lg-block d-xl-none">
+              <HomeMediumPoint point={point} />
+            </div>
+            <div className="d-none d-xl-block">
+              <LargePointView point={point} />
+            </div>
+*/
 
 export default MainPageTrainrAI;
 

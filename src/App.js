@@ -42,11 +42,11 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="experience" element={<ExperiencePage />} />
+            {/* <Route path="experience" element={<ExperiencePage />} />
             <Route
               path="experience/:eventId"
               element={<ExperienceDetailPage />}
-            />
+  />*/}
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="education" element={<EducationPage />} />
             {/*<Route path="contact" element={<Contact />} />*/}
