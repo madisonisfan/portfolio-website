@@ -2,6 +2,14 @@ import TestImage from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG"
 import TrainrAI_ImageOne from "../assets/images/TrainrAI_Images/TrainrAI_ImageOne.PNG";
 import TrainrAI_ImageTwo from "../assets/images/TrainrAI_Images/TrainrAI_ImageTwo.PNG";
 import TrainrAI_ImageThree from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG";
+import MealplannerRN1 from "../assets/Mealplanner-RN/MealplannerRN1.PNG";
+import MealplannerRN2 from "../assets/Mealplanner-RN/MealplannerRN2.PNG";
+import MealplannerRN3 from "../assets/Mealplanner-RN/MealplannerRN3.PNG";
+import MealplannerRN4 from "../assets/Mealplanner-RN/MealplannerRN4.PNG";
+import Mealplanner_Home from "../assets/images/Mealplanner-react-honors/home-page.png";
+import Mealplanner_Recipes from "../assets/images/Mealplanner-react-honors/recipes-page.png";
+import Mealplanner_AddRecipe from "../assets/images/Mealplanner-react-honors/add-recipe-page.png";
+import Mealplanner_Blog from "../assets/images/Mealplanner-react-honors/blog-page.png";
 
 export const PROJECTS = [
   {
@@ -25,8 +33,9 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Mealplanner React Native App",
-    description: "Recreated my mealplanner from the Nucamp Bootcamp",
-    images: [TestImage, TestImage],
+    description:
+      "During the React Native portion of Nucamp bootcamp, I created a meal planner app. Recently I decided to recreate this project with my new skills and updated technology. ",
+    images: [MealplannerRN1, MealplannerRN2, MealplannerRN3, MealplannerRN4],
     allTechnology: [
       "React Native Elements",
       "Trello",
@@ -73,7 +82,12 @@ export const PROJECTS = [
     title: "Mealplanner React Web App",
     description:
       "In the React portion of the Nucamp, I created a meal planner website. This was my first web app I created and first time working with React independently. ",
-    images: [TestImage, TestImage],
+    images: [
+      Mealplanner_Home,
+      Mealplanner_Recipes,
+      Mealplanner_AddRecipe,
+      Mealplanner_Blog,
+    ],
     gitHubLink: "",
     mainTechnology: ["React", "Reactstrap", "Redux"],
     allTechnology: [

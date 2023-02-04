@@ -25,7 +25,7 @@ $customXL: 1400px;
   color: $darkPurpleText;
 }
 
-.project-tech-list {
+.project-main-tech-list {
   text-align: left;
   padding: 0;
 }
@@ -129,6 +129,10 @@ $customXL: 1400px;
   .project-image {
     display: none;
   }
+
+  .project-main-tech-list {
+    display: none;
+  }
 }
 
 //MIN: MD
@@ -176,6 +180,10 @@ $customXL: 1400px;
     padding: 30px;
     text-align: left;
   }
+
+  .project-main-tech-list {
+    display: block;
+  }
 }
 
 //MIN: CUSTOM XL (1400PX)
@@ -183,19 +191,11 @@ $customXL: 1400px;
   .project-image-simple {
     display: block;
   }
-
-  .project-main-tech-list {
-    display: block;
-  }
 }
 
 //MAX: CUSTOM XL (1400PX)
 @media only screen and (max-width: $customXL) {
   .project-image-simple {
-    display: none;
-  }
-
-  .project-main-tech-list {
     display: none;
   }
 

@@ -1,13 +1,15 @@
 import Card from "react-bootstrap/Card";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Modal } from "reactstrap";
 import { useState, useEffect } from "react";
 import Image from "react-bootstrap/Image";
 import Seperator from "../../components/Seperator";
+import ProjectDetailModal from "./ProjectDetailModal";
 
 const ProjectDisplay = ({ project }) => {
   const { id, title, description, images, mainTechnology } = project;
   console.log(`project: `, mainTechnology);
   const [belowLg, setBelowLg] = useState(false);
+  const [isDetailModalOpen, toggleDetailModal] = useState(false);
 
   const styles = {
     projectImage: {
@@ -89,72 +91,86 @@ const ProjectDisplay = ({ project }) => {
   });
 
   return (
-    <Card className="project-card">
-      <Image
-        src={images[0]}
-        className="project-image"
-        style={styles.projectImage}
-        rounded
-      />
-      <Card.ImgOverlay className="project-card-img-overlay">
-        <Container className="p-0" styles={styles.projectOverlay}>
-          <Row style={styles.projectRow}>
-            <Col xs={12}>
-              <div className="project-title d-flex" style={styles.projectTitle}>
-                <div className="d-none d-sm-block">|</div>
+    <>
+      <Card className="project-card">
+        <Image
+          src={images[0]}
+          className="project-image"
+          style={styles.projectImage}
+          rounded
+        />
+        <Card.ImgOverlay className="project-card-img-overlay">
+          <Container className="p-0" styles={styles.projectOverlay}>
+            <Row style={styles.projectRow}>
+              <Col xs={12}>
                 <div
-                  className="ps-0 ps-sm-3 pe-3"
-                  style={{ paddingTop: "2px" }}
+                  className="project-title d-flex"
+                  style={styles.projectTitle}
                 >
-                  <p>{title}</p>
+                  <div className="d-none d-sm-block">|</div>
+                  <div
+                    className="ps-0 ps-sm-3 pe-3"
+                    style={{ paddingTop: "2px" }}
+                  >
+                    <p>{title}</p>
+                  </div>
+                  <div className="d-none d-sm-block"> | </div>
                 </div>
-                <div className="d-none d-sm-block"> | </div>
-              </div>
 
-              {/*<Card.Subtitle
+                {/*<Card.Subtitle
                 className="project-subtitle"
                 style={styles.projectSubtitle}
               >
                 {subtitle}
   </Card.Subtitle>*/}
-              {/*<Card.Subtitle className="event-date" style={styles.eDate}>
+                {/*<Card.Subtitle className="event-date" style={styles.eDate}>
                 {dateRange}
   </Card.Subtitle>*/}
-              <Row className="d-flex" style={styles.projectDescriptionRow}>
-                <Col lg={8}>
-                  <Card.Text
-                    className="project-description"
-                    style={styles.projectDescriptionText}
-                  >
-                    {description}
-                  </Card.Text>
-                </Col>
-              </Row>
+                <Row className="d-flex" style={styles.projectDescriptionRow}>
+                  <Col lg={8}>
+                    <Card.Text
+                      className="project-description"
+                      style={styles.projectDescriptionText}
+                    >
+                      {description}
+                    </Card.Text>
+                  </Col>
+                </Row>
 
-              <ul className="project-main-tech-list">
-                <div
-                  className="d-flex project-main-tech-list"
-                  style={styles.projectMainTechList}
-                >
-                  <Seperator /> {mainTech}
-                </div>
-              </ul>
-              <Row style={styles.readMoreButtonRow}>
-                <Col xs={5}>
-                  {" "}
-                  <button
-                    className="read-more-butt"
-                    // onClick={() => toggleDetailOpen(true)}
+                <ul className="project-main-tech-list">
+                  <div
+                    className="d-flex project-main-tech-list"
+                    style={styles.projectMainTechList}
                   >
-                    Read More
-                  </button>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </Card.ImgOverlay>
-    </Card>
+                    <Seperator /> {mainTech}
+                  </div>
+                </ul>
+                <Row style={styles.readMoreButtonRow}>
+                  <Col xs={5}>
+                    {" "}
+                    <button
+                      className="read-more-butt"
+                      onClick={() => toggleDetailModal(true)}
+                    >
+                      Read More
+                    </button>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Container>
+        </Card.ImgOverlay>
+      </Card>
+      <Modal
+        returnFocusAfterClose
+        centered
+        isOpen={isDetailModalOpen}
+        toggle={() => toggleDetailModal(!isDetailModalOpen)}
+        size="xl"
+      >
+        <ProjectDetailModal project={project} toggleModal={toggleDetailModal} />
+      </Modal>
+    </>
   );
 };
 
