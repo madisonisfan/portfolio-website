@@ -92,7 +92,10 @@ const ProjectDisplay = ({ project }) => {
 
   return (
     <>
-      <Card className="project-card">
+      <Card
+        className="project-card"
+        onClick={() => toggleDetailModal(!isDetailModalOpen)}
+      >
         <Image
           src={images[0]}
           className="project-image"
