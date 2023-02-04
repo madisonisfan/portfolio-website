@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image";
 const MainPageTrainrAI = () => {
   return (
     <Container className="tAI-container">
-      <PageTitleThree pageTitle="TrainrAI" />
+      <PageTitleThree pageTitle="Spotlight Project: TrainrAI" />
 
       {TRAINRAI_POINTS.map((point) => {
         return (

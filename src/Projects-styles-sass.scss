@@ -39,8 +39,8 @@ $customXL: 1400px;
 
 //MAX: SM
 @media only screen and (max-width: $sm) {
-  .card.event-card {
-    min-height: 340px;
+  .card.project-card {
+    min-height: 280px;
     background-color: #282646;
     margin-bottom: 100px;
   }
@@ -83,7 +83,7 @@ $customXL: 1400px;
 //BETWEEN SM & MD
 @media only screen and (min-width: $sm) and (max-width: $md) {
   .card.project-card {
-    min-height: 360px;
+    min-height: 320px;
     background-color: #282646;
     margin-bottom: 150px;
   }
@@ -92,7 +92,7 @@ $customXL: 1400px;
 //BETWEEN MD & LG
 @media only screen and (min-width: $md) and (max-width: $lg) {
   .card.project-card {
-    min-height: 305px;
+    min-height: 275px;
     background-color: #282646;
     margin-bottom: 150px;
   }
