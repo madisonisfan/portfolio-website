@@ -10,6 +10,11 @@ import Mealplanner_Home from "../assets/images/Mealplanner-react-honors/home-pag
 import Mealplanner_Recipes from "../assets/images/Mealplanner-react-honors/recipes-page.png";
 import Mealplanner_AddRecipe from "../assets/images/Mealplanner-react-honors/add-recipe-page.png";
 import Mealplanner_Blog from "../assets/images/Mealplanner-react-honors/blog-page.png";
+import TrainrAI_LoadingScreen from "../assets/images/TrainrAI-phone/loading-screen.png";
+import TrainrAI_NightTasks from "../assets/images/TrainrAI-phone/night-tasks.png";
+import TrainrAI_ProgressScreen from "../assets/images/TrainrAI-phone/progress.png";
+import TrainrAI_Checklist from "../assets/images/TrainrAI-phone/tasks.png";
+import TrainrAI_Assessment from "../assets/images/TrainrAI-phone/weekly-assessment.png";
 
 export const PROJECTS = [
   {
@@ -18,7 +23,13 @@ export const PROJECTS = [
     subtitle: "Founder & Software Developer",
     description:
       "After particapting in Founder University, I built and then launched trainrAI to a group of testers. trainAI is a iOS app created to help people build healthy habits and improve thier lifestyles. ",
-    images: [TrainrAI_ImageOne, TrainrAI_ImageTwo, TrainrAI_ImageThree],
+    images: [
+      TrainrAI_Checklist,
+      TrainrAI_NightTasks,
+      TrainrAI_ProgressScreen,
+      TrainrAI_Assessment,
+      TrainrAI_LoadingScreen,
+    ],
     mainTechnology: ["SwiftUI", "Core Data", "CloudKit"],
     allTechnology: ["SwiftUI", "Core Data", "CloudKit", "GitHub", "Xcode"],
     descriptionPoints: [
@@ -36,17 +47,7 @@ export const PROJECTS = [
     description:
       "During the React Native portion of Nucamp bootcamp, I created a meal planner app. Recently I decided to recreate this project with my new skills and updated technology. ",
     images: [MealplannerRN1, MealplannerRN2, MealplannerRN3, MealplannerRN4],
-    allTechnology: [
-      "React Native Elements",
-      "Trello",
-      "Visual Studio Code",
-      "Expo CLI",
-      "Expo Go",
-      "React Navigation",
-      "React Redux",
-      "GitHub",
-      "Font Awesome",
-    ],
+    allTechnology: ["Expo", "React Redux", "GitHub", "Font Awesome"],
     mainTechnology: ["React Native", "Expo", "React Redux"],
     gitHubLink: "",
     descriptionPoints: [
@@ -58,6 +59,7 @@ export const PROJECTS = [
       "React Navigation is used throughout the app to navigate between screens using Tab and Stack Navigators, and Stack Screens. ",
       "React Native Elements are used on every screen to access various components such as Icons and Buttons.",
     ],
+    gitHubLink: "https://github.com/madisonisfan/mealplanner-RN-2022",
   },
 
   {
@@ -76,6 +78,7 @@ export const PROJECTS = [
       "The first step was to style. Given that I was using SwiftUI, it was pretty easy to retrieve the correct colors and icon.",
       "The second step was functionality. By the end, the app was fully capable of completing any operations it was asked to do. ",
     ],
+    gitHubLink: "https://github.com/madisonisfan/Basic-Calculator-",
   },
   {
     id: 3,
@@ -103,5 +106,6 @@ export const PROJECTS = [
       "This was my first time building a React app independently.",
       "Inspiration: For almost my entire life I've had a passion for health and fitness. Like most people, I found it difficult to find healthy foods that I enjoy and to stay consistent with healthy eating. My goal is to create a place for people to go where they can organize their weekly meal plans, and be motivated by the community integrated with the site. To help with finding food options for everyone, I created a feature that allows anyone to add a recipe to the site. With everyone adding recipes, there would be an extensive list of food.",
     ],
+    gitHubLink: "https://github.com/madisonisfan/mealplanner-react",
   },
 ];
