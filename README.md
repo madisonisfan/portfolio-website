@@ -20,6 +20,7 @@ This is a simple portfolio website to display my education, experience, and skil
 - Reactstrap
 - Font Awesome
 - React Router Dom
+- React Spring
 
 
 
