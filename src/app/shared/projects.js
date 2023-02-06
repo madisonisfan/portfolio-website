@@ -44,6 +44,7 @@ export const PROJECTS = [
   {
     id: 1,
     title: "Mealplanner React Native App",
+    subtitle: "",
     description:
       "During the React Native portion of Nucamp bootcamp, I created a meal planner app. Recently I decided to recreate this project with my new skills and updated technology. ",
     images: [MealplannerRN1, MealplannerRN2, MealplannerRN3, MealplannerRN4],
@@ -65,8 +66,9 @@ export const PROJECTS = [
   {
     id: 2,
     title: "Recreating iOS Calculator",
+    subtitle: "",
     description:
-      "I recreated Apple’s iOS calculator with SwiftUI that includes styling and functionality. This was just a fun project to do and it was a great way to grow my skills. I plan to continue this project and expand its capabilities.  ",
+      "I recreated Apple’s iOS calculator with SwiftUI that includes styling and functionality. This was just a fun project to do and it was a great way to grow my skills. I plan to continue this project and expand its capabilities.",
     images: [TestImage, TestImage],
     gitHubLink: "",
     //youtubelink
@@ -83,6 +85,7 @@ export const PROJECTS = [
   {
     id: 3,
     title: "Mealplanner React Web App",
+    subtitle: "",
     description:
       "In the React portion of the Nucamp, I created a meal planner website. This was my first web app I created and first time working with React independently. ",
     images: [

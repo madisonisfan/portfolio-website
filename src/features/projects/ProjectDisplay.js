@@ -9,7 +9,7 @@ import { useSpring, animated, to } from "@react-spring/web";
 import { useGesture } from "react-use-gesture";
 
 const ProjectDisplay = ({ project }) => {
-  const { id, title, description, images, mainTechnology } = project;
+  const { id, title, subtitle, description, images, mainTechnology } = project;
   const [toggleState, toggle] = useState(true);
   const [belowLg, setBelowLg] = useState(false);
   const [isDetailModalOpen, toggleDetailModal] = useState(false);
@@ -48,10 +48,10 @@ const ProjectDisplay = ({ project }) => {
     /*projectDate: {
       textAlign: belowLg ? "left" : id % 2 == 0 ? "right" : "left",
     },*/
-    /*
+
     projectSubtitle: {
       textAlign: belowLg ? "left" : id % 2 == 0 ? "right" : "left",
-    },*/
+    },
 
     projectRow: {
       textAlign: belowLg ? "left" : id % 2 == 0 ? "right" : "left",
@@ -114,10 +114,9 @@ const ProjectDisplay = ({ project }) => {
         style={{
           scale: to([scale], (s) => s),
         }}
-        // style={{ scale: to([scale, zoom], (s, z) => s + z) }}
       >
         <Card
-          className="project-card "
+          className="project-card"
           onClick={() => toggleDetailModal(!isDetailModalOpen)}
         >
           <Image
@@ -126,7 +125,7 @@ const ProjectDisplay = ({ project }) => {
             style={styles.projectImage}
             rounded
           />
-          <Card.ImgOverlay className="project-card-img-overlay hover-zoom">
+          <Card.ImgOverlay className="project-card-img-overlay">
             <Container className="p-0" styles={styles.projectOverlay}>
               <Row style={styles.projectRow}>
                 <Col xs={12}>
@@ -144,12 +143,12 @@ const ProjectDisplay = ({ project }) => {
                     <div className="d-none d-sm-block"> | </div>
                   </div>
 
-                  {/*<Card.Subtitle
-                className="project-subtitle"
-                style={styles.projectSubtitle}
-              >
-                {subtitle}
-  </Card.Subtitle>*/}
+                  <Card.Subtitle
+                    className="project-subtitle"
+                    style={styles.projectSubtitle}
+                  >
+                    {subtitle}
+                  </Card.Subtitle>
                   {/*<Card.Subtitle className="event-date" style={styles.eDate}>
                 {dateRange}
   </Card.Subtitle>*/}

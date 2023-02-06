@@ -47,7 +47,7 @@ export const EDUCATION = [
   {
     id: 1,
     title: "Web Programming with Python and JavaScript",
-    subtitle: "HarvardX",
+    subtitle: "Earned a certificate",
     dateRange: "Aug 2020 - Jan 2021",
     description:
       "This was my first true experience with web development. During the span of the course, I went from reviewing HTML to learning about various ways to test and security and scaling.",
@@ -72,7 +72,7 @@ export const EDUCATION = [
   {
     id: 2,
     title: "Santa Monica College - CS Major",
-    subtitle: "Dean's Honor list - 2 Scholarships - STEM Program",
+    subtitle: "STEM Program",
     dateRange: "Sept 2018 - June 2020",
     images: [Scholarship, ScholarshipTwo],
     description:
