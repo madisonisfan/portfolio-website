@@ -9,7 +9,22 @@ import Image from "react-bootstrap/Image";
 const MainPageTrainrAI = () => {
   return (
     <Container className="tAI-container">
-      <PageTitleThree pageTitle="Spotlight Project: TrainrAI" />
+      <div
+        className="d-block d-md-none"
+        style={{
+          fontWeight: "700",
+          color: "white",
+          fontSize: 30,
+          textAlign: "left",
+          marginBottom: "50px",
+        }}
+      >
+        Spotlight Project: TrainrAI
+      </div>
+
+      <div className="d-none d-md-block">
+        <PageTitleThree pageTitle="Spotlight Project: TrainrAI" />
+      </div>
 
       {TRAINRAI_POINTS.map((point) => {
         return (
