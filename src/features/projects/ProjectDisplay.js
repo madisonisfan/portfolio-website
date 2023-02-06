@@ -196,14 +196,30 @@ const ProjectDisplay = ({ project }) => {
         onHide={() => toggleDetailModal(!isDetailModalOpen)}
         dialogClassName="modal-main-container"
       >
-        <Modal.Header closeButton className="project-modal-header">
+        <div className="d-flex project-modal-header justify-content-between">
           <Modal.Title className="project-modal-title">
-            {window.innerWidth < 576 ? title : `{${title}}`}
+            {title}
+            {/*window.innerWidth < 768 ? title : `{${title}}`*/}
           </Modal.Title>
-        </Modal.Header>
+          <Button
+            onClick={() => toggleDetailModal(!isDetailModalOpen)}
+            className="project-modal-close-button d-none d-sm-block"
+          >
+            X
+          </Button>
+        </div>
+
         <Modal.Body>
           <ProjectDetailModal project={project} />
         </Modal.Body>
+        <Modal.Footer
+          className="d-block d-sm-none"
+          style={{ marginRight: "auto", marginLeft: "auto", border: "none" }}
+        >
+          <Button onClick={() => toggleDetailModal(!isDetailModalOpen)}>
+            Close
+          </Button>
+        </Modal.Footer>
       </Modal>
     </>
   );

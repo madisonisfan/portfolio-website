@@ -16,9 +16,22 @@ $customXL: 1400px;
   padding: "20px";
 }
 
+.project-modal-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-modal-close-button {
+  color: $darkPurpleText;
+  background-color: $mainBackgroundColor;
+  border: none;
+  font-size: 20px;
+}
+
 .project-modal-title {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .project-description-list-div {
@@ -30,6 +43,12 @@ $customXL: 1400px;
   padding-bottom: 10px;
   padding-right: 20px;
   font-weight: 400;
+}
+
+.btn-close {
+  color: $neonPurple;
+  //background-color: $mainBackgroundColor;
+  background: none;
 }
 
 //PROJECT DISPLAY EXTRA:
