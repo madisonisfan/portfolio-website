@@ -1,9 +1,10 @@
 import Card from "react-bootstrap/Card";
-import { Container, Row, Col, Modal } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
+import Modal from "react-bootstrap/Modal";
 import { useState, useEffect } from "react";
 import Image from "react-bootstrap/Image";
 import Seperator from "../../components/Seperator";
-import ProjectDetailModal from "./ProjectDetailModal";
+import ProjectDetailModal from "./ProjectDetailModalBody";
 import { useSpring, animated, to } from "@react-spring/web";
 import { useGesture } from "react-use-gesture";
 
@@ -189,13 +190,20 @@ const ProjectDisplay = ({ project }) => {
         </Card>
       </animated.div>
       <Modal
-        returnFocusAfterClose
         centered
-        isOpen={isDetailModalOpen}
-        toggle={() => toggleDetailModal(!isDetailModalOpen)}
         size="xl"
+        show={isDetailModalOpen}
+        onHide={() => toggleDetailModal(!isDetailModalOpen)}
+        dialogClassName="modal-main-container"
       >
-        <ProjectDetailModal project={project} toggleModal={toggleDetailModal} />
+        <Modal.Header closeButton className="project-modal-header">
+          <Modal.Title className="project-modal-title">
+            {window.innerWidth < 576 ? title : `{${title}}`}
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <ProjectDetailModal project={project} />
+        </Modal.Body>
       </Modal>
     </>
   );

@@ -1,14 +1,35 @@
 $mainBackgroundColor: #171629;
 $darkPurpleText: #c9b7db;
 $neonPurple: #8b50e3;
+$lightPurpleBackground: #38324f;
+
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 $customXL: 1400px;
 
-.project-page-container {
-  height: 100%;
+//.modal-content {
+.modal-main-container {
+  color: $darkPurpleText;
+  font-family: "lft-etica-mono";
+  padding: "20px";
+}
+
+.project-modal-title {
+  color: white;
+  font-size: 30px;
+}
+
+.project-description-list-div {
+  background-color: $lightPurpleBackground;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  font-weight: 400;
 }
 
 //PROJECT DISPLAY EXTRA:
@@ -60,6 +81,10 @@ $customXL: 1400px;
     padding-bottom: 10px;
     color: $darkPurpleText;
     font-weight: 500;
+  }
+
+  .project-modal-title {
+    text-align: center;
   }
 }
 
