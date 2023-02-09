@@ -196,13 +196,28 @@ const ProjectDisplay = ({ project }) => {
         dialogClassName="modal-main-container"
       >
         <div className="d-flex project-modal-header justify-content-between">
-          <Modal.Title className="project-modal-title">
+          <Modal.Title className="project-modal-title d-flex">
             {title}
+            {project.gitHubLink && (
+              <div
+                className="d-flex justify-content-center"
+                style={{ paddingLeft: "20px" }}
+                // style={{ width: "100%" }}
+              >
+                <a href={project.gitHubLink} style={{ color: "#8b50e3" }}>
+                  <i
+                    className="fa fa-github"
+                    style={{ fontSize: "40px", marginBottom: "10px" }}
+                  />
+                </a>
+              </div>
+            )}
             {/*window.innerWidth < 768 ? title : `{${title}}`*/}
           </Modal.Title>
           <Button
             onClick={() => toggleDetailModal(!isDetailModalOpen)}
             className="project-modal-close-button d-none d-sm-block"
+            style={{ height: "30px" }}
           >
             X
           </Button>

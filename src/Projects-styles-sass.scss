@@ -136,7 +136,7 @@ $customXL: 1400px;
 //BETWEEN MD & LG
 @media only screen and (min-width: $md) and (max-width: $lg) {
   .card.project-card {
-    min-height: 275px;
+    min-height: 280px;
     background-color: #282646;
     margin-bottom: 150px;
   }

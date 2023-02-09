@@ -34,11 +34,13 @@ const ProjectDetailModalBody = ({ project, toggleModal }) => {
   return (
     <div>
       {/*<div>{dateRange}</div>*/}
+
       <ul className="project-main-tech-list" style={{ marginTop: "15px" }}>
         <div className="d-flex project-main-tech-list">
           <Seperator /> {mainTech}
         </div>
       </ul>
+
       <div
         className="project-description-list-div"
         style={{
@@ -49,19 +51,7 @@ const ProjectDetailModalBody = ({ project, toggleModal }) => {
       >
         <ul>{descriptionList}</ul>
       </div>
-      {gitHubLink && (
-        <div
-          className="d-flex justify-content-center"
-          style={{ width: "100%" }}
-        >
-          <a href={gitHubLink} style={{ color: "#8b50e3" }}>
-            <i
-              className="fa fa-github fa-lg"
-              style={{ fontSize: "30px", marginBottom: "10px" }}
-            />
-          </a>
-        </div>
-      )}
+
       {/*
  {event.id === 1 && <EventVideoPlayer video={event.video} />}
 

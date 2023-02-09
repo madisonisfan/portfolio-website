@@ -37,10 +37,11 @@ export const EDUCATION = [
       "Bootstrap",
     ],
     descriptionPoints: [
-      "Development of responsive websites using bootstrap framework",
-      "Use React to create dynamic web applications. ",
-      "Use React Native to build and deploy mobile applications",
-      "Learn about and implement backend database operations, user authentication and application logic. ",
+      "Development of responsive websites using bootstrap framework.",
+      "Use React to create dynamic web applications.",
+      "Use React Native to build and deploy mobile applications. ",
+      "Learn about and implement backend database operations, user authentication and application logic.",
+      "engaged with students and assisted with issues, complex topics, and assignments.",
     ],
   },
 
@@ -63,10 +64,9 @@ export const EDUCATION = [
       "Visual Studio Code",
     ],
     descriptionPoints: [
-      "Self-directed online learning",
-      "The course dove deep into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap. Topics include database design, scalability, security, and user experience.",
-      "Testing methodologies",
-      "Scaling and security ",
+      "Self-directed online learning.",
+      "The course dove deep into the design and implementation of web apps with Python, JavaScript, and SQL using frameworks like Django, React, and Bootstrap.",
+      "Other topics included database design, scalability, security, user experience, and testing methodologies.",
     ],
   },
   {
