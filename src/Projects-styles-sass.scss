@@ -3,6 +3,7 @@ $darkPurpleText: #c9b7db;
 $neonPurple: #8b50e3;
 $lightPurpleBackground: #38324f;
 
+$xs: 400px;
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -78,9 +79,21 @@ $customXL: 1400px;
 }
 
 //MAX: SM
+@media only screen and (max-width: $xs) {
+  .card.project-card {
+    min-height: 345px;
+  }
+}
+
+@media only screen and (min-width: $xs) and (max-width: $sm) {
+  .card.project-card {
+    min-height: 320px;
+  }
+}
+
 @media only screen and (max-width: $sm) {
   .card.project-card {
-    min-height: 350px;
+    //min-height: 290px;
     background-color: #282646;
     margin-bottom: 100px;
   }
