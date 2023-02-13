@@ -89,7 +89,7 @@ export const PROJECTS = [
     title: "Mealplanner React Web App",
     subtitle: "",
     description:
-      "I created a meal planner website in the React portion of the Nucamp. This web app was my first independent React project. ",
+      "I created a meal planner website in the React portion of the Nucamp. This web app was my first independent React project. The functionality is similar to what I have implemented in the mobile app version of the site. ",
     images: [
       Mealplanner_Home,
       Mealplanner_Recipes,

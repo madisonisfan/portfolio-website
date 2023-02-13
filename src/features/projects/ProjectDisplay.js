@@ -213,10 +213,16 @@ const ProjectDisplay = ({ project }) => {
             color: "#8b50e3",
           }}
         >
-          <i className="fa fa-long-arrow-left" style={{ fontSize: "30px" }} />
-          <a href={gitHubLink} style={{ color: "#8b50e3" }}>
-            GitHub
-          </a>
+          <i
+            className="fa fa-long-arrow-left"
+            style={{ fontSize: "30px" }}
+            onClick={() => toggleDetailModal(!isDetailModalOpen)}
+          />
+          {gitHubLink && (
+            <a href={gitHubLink} style={{ color: "#8b50e3" }}>
+              GitHub
+            </a>
+          )}
         </div>
 
         <div

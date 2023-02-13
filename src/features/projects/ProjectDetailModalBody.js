@@ -35,7 +35,7 @@ const ProjectDetailModalBody = ({ project, toggleModal }) => {
     <div>
       {/*<div>{dateRange}</div>*/}
 
-      <ul className="project-main-tech-list" style={{ marginTop: "15px" }}>
+      <ul className="project-main-tech-list" style={{ marginTop: "0px" }}>
         <div className="d-flex project-main-tech-list">
           <Seperator /> {mainTech}
         </div>
@@ -46,7 +46,7 @@ const ProjectDetailModalBody = ({ project, toggleModal }) => {
         style={{
           backgroundColor: "#38324f",
           borderRadius: "10px",
-          marginTop: "20px",
+          marginTop: "10px",
         }}
       >
         <ul>{descriptionList}</ul>

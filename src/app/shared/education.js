@@ -71,7 +71,7 @@ export const EDUCATION = [
   },
   {
     id: 2,
-    title: "Santa Monica College - CS Major",
+    title: "Santa Monica College ",
     subtitle: "STEM Program",
     dateRange: "Sept 2018 - June 2020",
     images: [Scholarship, ScholarshipTwo],
@@ -80,6 +80,7 @@ export const EDUCATION = [
     mainTechnology: ["C", "C++", "HTML"],
     allTechnology: ["C", "C++", "HTML", "Visual Studio Code"],
     descriptionPoints: [
+      "Computer Science Major",
       "Dean’s honor list",
       "STEM Program",
       "Participated in the Programming club as treasurer and promoter.",
