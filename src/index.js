@@ -18,6 +18,8 @@ import "./TrainrAI-styles-sass.scss";
 //import "~video-react/dist/video-react.css";
 import "./contact-styles-sass.scss";
 import "./Styles-sass.scss";
+import "./Education-styles-sass.scss";
+import "./Projects-styles-sass.scss";
 
 const container = document.getElementById("root");
 const root = createRoot(container);

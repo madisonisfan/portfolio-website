@@ -1,0 +1,290 @@
+$mainBackgroundColor: #171629;
+$darkPurpleText: #c9b7db;
+$neonPurple: #8b50e3;
+$lightPurpleBackground: #38324f;
+
+$xs: 400px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$customXL: 1400px;
+
+//.modal-content {
+.modal-main-container {
+  color: $darkPurpleText;
+  font-family: "lft-etica-mono";
+  padding: "20px";
+}
+
+.project-modal-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.project-modal-close-button {
+  color: $darkPurpleText;
+  background-color: $mainBackgroundColor;
+  border: none;
+  font-size: 20px;
+}
+
+.project-modal-title {
+  color: white;
+  font-size: 25px;
+}
+
+.project-description-list-div {
+  background-color: $lightPurpleBackground;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  font-weight: 400;
+}
+
+.btn-close {
+  color: $neonPurple;
+  //background-color: $mainBackgroundColor;
+  background: none;
+}
+
+//PROJECT DISPLAY EXTRA:
+.read-more-butt {
+  background-color: transparent;
+  border: none;
+  color: $darkPurpleText;
+  border-bottom: solid 1px;
+  padding: 0;
+}
+
+.project-description {
+  font-weight: 400;
+  color: $darkPurpleText;
+}
+
+.project-main-tech-list {
+  text-align: left;
+  padding: 0;
+}
+.project-tech {
+  color: $darkPurpleText;
+  font-weight: 300;
+  padding-top: 0px;
+  display: inline;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+//MAX: SM
+@media only screen and (max-width: $xs) {
+  .card.project-card {
+    min-height: 345px;
+  }
+}
+
+@media only screen and (min-width: $xs) and (max-width: $sm) {
+  .card.project-card {
+    min-height: 320px;
+  }
+}
+
+@media only screen and (max-width: $sm) {
+  .card.project-card {
+    //min-height: 290px;
+    background-color: #282646;
+    margin-bottom: 100px;
+  }
+
+  .project-description {
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .project-title {
+    font-weight: 500;
+    font-size: 20px !important;
+    text-align: left;
+    color: white;
+  }
+  .project-subtitle {
+    padding-bottom: 10px;
+    color: $darkPurpleText;
+    font-weight: 500;
+  }
+
+  .project-modal-title {
+    text-align: center;
+  }
+}
+
+//MIN: SM
+@media only screen and (min-width: $sm) {
+  .project-title {
+    font-weight: 400;
+    font-size: 20px !important;
+    text-align: left;
+    color: $darkPurpleText;
+  }
+  .project-subtitle {
+    text-align: left;
+    padding-bottom: 10px;
+    color: $darkPurpleText;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #000000;
+  }
+}
+
+//BETWEEN SM & MD
+@media only screen and (min-width: $sm) and (max-width: $md) {
+  .card.project-card {
+    min-height: 330px;
+    background-color: #282646;
+    margin-bottom: 150px;
+  }
+}
+
+//BETWEEN MD & LG
+@media only screen and (min-width: $md) and (max-width: $lg) {
+  .card.project-card {
+    min-height: 280px;
+    background-color: #282646;
+    margin-bottom: 150px;
+  }
+
+  /*
+  .card.project-card:hover {
+    transform: scale(1.1);
+  }*/
+
+  /*
+  .card.project-card:hover {
+    transform: scale(1.1);
+  }*/
+
+  /*
+  think I can remove this because of the one below 
+  .project-page-container {
+    max-width: 80% !important;
+  }*/
+}
+
+//BETWEEN SM & LG
+@media only screen and (min-width: $sm) and (max-width: $lg) {
+  .project-page-container {
+    max-width: 80% !important;
+  }
+  .project-description {
+    margin-top: 10px;
+    text-align: left;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 20px;
+  }
+
+  .project-card-overlay {
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+//MAX: LG
+@media only screen and (max-width: $lg) {
+  .project-image {
+    display: none;
+  }
+
+  .project-main-tech-list {
+    display: none;
+  }
+}
+
+//MIN: MD
+@media only screen and (min-width: $lg) {
+  .project-page-container {
+    max-width: 70% !important;
+  }
+  //make sure there is a class with this name in projectDisplay
+  .project-card-img-overlay {
+    padding: 0;
+    background-color: rgb(23, 23, 41, 0.7);
+  }
+  //make sure there is a class with this name in projectDisplay
+  .project-card-img-overlay:hover {
+    padding: 0;
+    background-color: rgb(23, 23, 41, 0);
+  }
+
+  .card.project-card {
+    min-height: 400px;
+    margin-bottom: 80px;
+    border: none;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $mainBackgroundColor;
+  }
+  .project-image {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    opacity: 0.5;
+  }
+
+  .project-row {
+    align-items: center;
+  }
+  .project-description {
+    margin-top: 10px;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 30px;
+    text-align: left;
+  }
+
+  .project-main-tech-list {
+    display: block;
+  }
+}
+
+//MIN: CUSTOM XL (1400PX)
+@media only screen and (min-width: $customXL) {
+  .project-image-simple {
+    display: block;
+  }
+}
+
+//MAX: CUSTOM XL (1400PX)
+@media only screen and (max-width: $customXL) {
+  .project-image-simple {
+    display: none;
+  }
+
+  .read-more-butt {
+    margin-top: 10px;
+  }
+}
+
+.project-card {
+}
+
+.project-image {
+}
+
+.project-card-img-overlay {
+}
+
+.project-title {
+}
+
+.project-description {
+}
+
+.read-more-button {
+}
