@@ -9,7 +9,15 @@ import { useSpring, animated, to } from "@react-spring/web";
 import { useGesture } from "react-use-gesture";
 
 const ProjectDisplay = ({ project }) => {
-  const { id, title, subtitle, description, images, mainTechnology } = project;
+  const {
+    id,
+    title,
+    subtitle,
+    description,
+    images,
+    mainTechnology,
+    gitHubLink,
+  } = project;
   const [toggleState, toggle] = useState(true);
   const [belowLg, setBelowLg] = useState(false);
   const [isDetailModalOpen, toggleDetailModal] = useState(false);
@@ -195,47 +203,73 @@ const ProjectDisplay = ({ project }) => {
         onHide={() => toggleDetailModal(!isDetailModalOpen)}
         dialogClassName="modal-main-container"
       >
-        <div className="d-flex project-modal-header justify-content-between">
-          <Modal.Title className="project-modal-title d-flex">
+        <div
+          className="d-flex d-block d-lg-none justify-content-between"
+          style={{
+            paddingTop: "10px",
+            paddingBottom: "0px",
+            paddingRight: "15px",
+            paddingLeft: "15px",
+            color: "#8b50e3",
+          }}
+        >
+          <i className="fa fa-long-arrow-left" style={{ fontSize: "30px" }} />
+          <a href={gitHubLink} style={{ color: "#8b50e3" }}>
+            GitHub
+          </a>
+        </div>
+
+        <div
+          className="d-flex project-modal-header justify-content-between align-items-center"
+          style={{ paddingTop: "5px" }}
+        >
+          <Modal.Title className="project-modal-title" style={{}}>
             {title}
-            {project.gitHubLink && (
-              <div
-                className="d-flex justify-content-center"
-                style={{ paddingLeft: "20px" }}
-                // style={{ width: "100%" }}
-              >
-                <a href={project.gitHubLink} style={{ color: "#8b50e3" }}>
-                  <i
-                    className="fa fa-github"
-                    style={{ fontSize: "40px", marginBottom: "10px" }}
-                  />
-                </a>
+          </Modal.Title>
+          <div className="d-flex" style={{ flexDirection: "" }}>
+            {gitHubLink && (
+              <div className="d-none d-lg-block">
+                <GitHubLink gitHubLink={gitHubLink} />{" "}
               </div>
             )}
-            {/*window.innerWidth < 768 ? title : `{${title}}`*/}
-          </Modal.Title>
-          <Button
-            onClick={() => toggleDetailModal(!isDetailModalOpen)}
-            className="project-modal-close-button d-none d-sm-block"
-            style={{ height: "30px" }}
-          >
-            X
-          </Button>
+            <Button
+              onClick={() => toggleDetailModal(!isDetailModalOpen)}
+              className="project-modal-close-button d-none d-lg-block "
+              style={{
+                marginLeft: "15px",
+                padding: "0px",
+                height: "40px",
+                fontSize: "30px",
+                //color: "#8b50e3",
+              }}
+            >
+              X
+            </Button>
+          </div>
         </div>
 
         <Modal.Body>
           <ProjectDetailModal project={project} />
         </Modal.Body>
-        <Modal.Footer
-          className="d-block d-sm-none"
-          style={{ marginRight: "auto", marginLeft: "auto", border: "none" }}
-        >
-          <Button onClick={() => toggleDetailModal(!isDetailModalOpen)}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
+  );
+};
+
+const GitHubLink = ({ gitHubLink }) => {
+  return (
+    <div
+      // className="d-flex justify-content-center"
+      style={{ paddingLeft: "20px", alignSelf: "flex-end" }}
+      // style={{ width: "100%" }}
+    >
+      <a href={gitHubLink} style={{ color: "#8b50e3" }}>
+        <i
+          className="fa fa-github"
+          style={{ fontSize: "40px", marginBottom: "10px" }}
+        />
+      </a>
+    </div>
   );
 };
 

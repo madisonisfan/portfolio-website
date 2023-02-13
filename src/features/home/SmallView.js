@@ -21,7 +21,7 @@ const variants = {
 };
 
 const SimpleHomePoint = ({ point }) => {
-  const { text, title, image, textPoints } = point;
+  const { text, title, image, textPoints, links } = point;
   const [isTextOpen, toggleText] = useState(false);
   const [greenOpen, toggleGreen] = useState(false);
 
@@ -50,6 +50,27 @@ const SimpleHomePoint = ({ point }) => {
           //style={{ overflow: isTextOpen ? "auto" : "hidden" }}
           style={{ overflow: "hidden" }}
         >
+          {/*links.length !== 0 && (
+            <div
+              className="d-flex"
+              style={{ flexDirection: "column", marginBottom: "10px" }}
+            >
+              <a
+                href=" https://apps.apple.com/us/app/trainrai/id1607353787"
+                style={{ color: "rgb(206, 205, 205)", fontSize: "20px" }}
+              >
+                {" "}
+                Now on the App Store!
+              </a>
+              <a
+                href="https://www.facebook.com/groups/461302738742548/"
+                style={{ color: "rgb(206, 205, 205)", fontSize: "20px" }}
+              >
+                {" "}
+                Join our Facebook group!
+              </a>
+            </div>
+          )*/}
           {textPoints.map((textPoint) => {
             return <div style={{ marginBottom: 15 }}> {textPoint}</div>;
           })}

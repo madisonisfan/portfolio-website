@@ -35,7 +35,7 @@ export const PROJECTS = [
     allTechnology: ["SwiftUI", "Core Data", "CloudKit", "GitHub", "Xcode"],
     descriptionPoints: [
       "Created an iOS app in SwiftUI that helps people build healthy habits.",
-      "Distributed through TestFlight and being used by a small group of beta testers.",
+      "Now on the App Store! Previously distributed through TestFlight and was being used by a small group of beta testers.",
       "Users are able to check off daily tasks, add bonus tasks, complete a weekly fitness assessment, view their current “perfect day” streaks and track their fitness progress.",
       "Learning and iterating on the app based on user feedback.",
       "Trello is being used to organize development. ",

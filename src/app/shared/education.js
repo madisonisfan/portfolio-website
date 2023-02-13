@@ -13,7 +13,7 @@ export const EDUCATION = [
     subtitle: "Earned the certificate of honors",
     dateRange: "Feb 2021 - July 2021",
     description:
-      "This bootcamp focused on creating dynamic web and mobile apps with the use of React and React Native. In addition, we were taught how to develop and use backend technology.",
+      "This bootcamp focused on creating dynamic web and mobile apps using React and React Native. In addition, we were taught how to develop and use backend technology.",
     images: [
       Mealplanner_Home,
       Mealplanner_Recipes,
@@ -38,10 +38,10 @@ export const EDUCATION = [
     ],
     descriptionPoints: [
       "Development of responsive websites using bootstrap framework.",
-      "Use React to create dynamic web applications.",
-      "Use React Native to build and deploy mobile applications. ",
-      "Learn about and implement backend database operations, user authentication and application logic.",
-      "engaged with students and assisted with issues, complex topics, and assignments.",
+      "Used React to create dynamic web applications.",
+      "Used React Native to build and deploy mobile applications. ",
+      "Learn about and implement backend database operations, user authentication, and application logic.",
+      "Engaged with students and assisted with issues, complex topics, and assignments.",
     ],
   },
 
@@ -51,7 +51,7 @@ export const EDUCATION = [
     subtitle: "Earned a certificate",
     dateRange: "Aug 2020 - Jan 2021",
     description:
-      "This was my first true experience with web development. During the span of the course, I went from reviewing HTML to learning about various ways to test and security and scaling.",
+      "This course was my first true experience with web development. During the course, I reviewed HTML, explored various test methods, and studied backend technology, security, and scaling. ",
     images: [HarvardX_Certificate],
     mainTechnology: ["JavaScript", "Python", "SQL", "CSS", "Django"],
     allTechnology: [
@@ -76,14 +76,14 @@ export const EDUCATION = [
     dateRange: "Sept 2018 - June 2020",
     images: [Scholarship, ScholarshipTwo],
     description:
-      "During my time at Santa Monica College, I majored in Computer Science, earned two scholarships, joined the STEM program, and particapted in the computer programming club.",
+      "While at Santa Monica College, I majored in Computer Science, earned two scholarships, joined the STEM program, and participated in the computer programming club.",
     mainTechnology: ["C", "C++", "HTML"],
     allTechnology: ["C", "C++", "HTML", "Visual Studio Code"],
     descriptionPoints: [
       "Dean’s honor list",
       "STEM Program",
-      "Participated in the Programming club as treasurer and promoter",
-      "2 scholarships: Southern California Edison STEM Scholarship and Robert R. Sprague Foundation Scholarships for STEM",
+      "Participated in the Programming club as treasurer and promoter.",
+      "Earned two scholarships: Southern California Edison STEM Scholarship and Robert R. Sprague Foundation Scholarships for STEM.",
     ],
   },
 ];
