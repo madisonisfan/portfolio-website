@@ -3,7 +3,7 @@ import TrainrAI_ImageOne from "../assets/images/TrainrAI_Images/TrainrAI_ImageOn
 import TrainrAI_ImageTwo from "../assets/images/TrainrAI_Images/TrainrAI_ImageTwo.PNG";
 import TrainrAI_ImageThree from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG";
 import MealplannerRN_Home from "../assets/Mealplanner-RN/MealplannerRN_Home.PNG";
-import MealplannerRN_Blog from "../assets/Mealplanner-RN/MealplannerRN_Blog.PNG";
+import MealplannerRN_Blog from "../assets/Mealplanner-RN/MealplannerRN_Blog.jpg";
 import MealplannerRN_Favorites from "../assets/Mealplanner-RN/MealplannerRN_Favorites.PNG";
 import MealplannerRN_Mealplan from "../assets/Mealplanner-RN/MealplannerRN_Mealplan.PNG";
 //import MealplannerRN4 from "../assets/Mealplanner-RN/MealplannerRN4.PNG";
