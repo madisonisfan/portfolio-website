@@ -20,6 +20,7 @@ import EducationPage from "./pages/EducationPage";
 import ContactColumn from "./components/ContactColumn";
 //import Contact from "./pages/ContactPage";
 import "./App.css";
+import { Icon } from "@iconify/react";
 
 function App() {
   const { innerWidth: width, innerHeight: height } = window;
