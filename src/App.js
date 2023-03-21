@@ -13,6 +13,7 @@ import {
 import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
+import HeaderTesting from "./components/HeaderTesting";
 import ExperiencePage from "./pages/ExperiencePage";
 import ExperienceDetailPage from "./pages/ExperienceDetailPage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -20,7 +21,6 @@ import EducationPage from "./pages/EducationPage";
 import ContactColumn from "./components/ContactColumn";
 //import Contact from "./pages/ContactPage";
 import "./App.css";
-import { Icon } from "@iconify/react";
 
 function App() {
   const { innerWidth: width, innerHeight: height } = window;

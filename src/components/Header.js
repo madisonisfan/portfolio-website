@@ -11,6 +11,7 @@ import {
   Button,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -111,8 +112,30 @@ const Header = () => {
               href="https://github.com/madisonisfan"
               style={{ color: "#8b50e3", marginRight: 20 }}
             >
-              <i className="fa fa-github fa-lg" style={{ fontSize: "30px" }} />
+              <i
+                className="fa fa-github fa-lg"
+                style={{ fontSize: "30px", marginBottom: 10 }}
+              />
             </a>
+
+            <a
+              href="https://www.fiverr.com/madisonisfan?public_mode=true"
+              style={{ color: "#8b50e3", marginRight: 20 }}
+            >
+              <Icon icon="jam:fiverr" style={{ marginBottom: 10 }} width="30" />
+            </a>
+
+            <a
+              href="https://www.upwork.com/freelancers/~01531bb0c9a7ca4ffd"
+              style={{ color: "#8b50e3", marginRight: 20 }}
+            >
+              <Icon
+                icon="tabler:brand-upwork"
+                width="35"
+                style={{ marginBottom: 10 }}
+              />
+            </a>
+
             <a
               href="https://www.youtube.com/channel/UCuTP6I1OS2lGOI8Qq4CD3VA"
               style={{ color: "#8b50e3", marginRight: 20 }}

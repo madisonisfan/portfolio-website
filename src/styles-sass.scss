@@ -8,6 +8,10 @@ $lg: 992px;
 $xl: 1200px;
 
 @media only screen and (max-width: $md) {
+  .navbar {
+    //border-bottom: 1px solid;
+    //border-bottom-color: #8b50e3;
+  }
   .main-nav-link-not-active:hover {
     color: #8b50e3;
     font-weight: bold;
