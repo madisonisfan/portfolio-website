@@ -16,6 +16,10 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, toggleModal] = useState(false);
 
+  const closeNavbar = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <Navbar sticky="top" expand="md">
@@ -33,6 +37,7 @@ const Header = () => {
             <NavItem>
               <NavLink
                 //className="nav-link"
+                onClick={closeNavbar}
                 to="/"
                 className={({ isActive }) =>
                   isActive ? "main-nav-link-active" : "main-nav-link-not-active"
@@ -54,6 +59,7 @@ const Header = () => {
               </NavItem>*/}
             <NavItem style={{ alignItems: "center" }}>
               <NavLink
+                onClick={closeNavbar}
                 to="/projects"
                 className={({ isActive }) =>
                   isActive ? "main-nav-link-active" : "main-nav-link-not-active"
@@ -64,6 +70,7 @@ const Header = () => {
             </NavItem>
             <NavItem style={{ alignItems: "center" }}>
               <NavLink
+                onClick={closeNavbar}
                 to="/education"
                 className={({ isActive }) =>
                   isActive ? "main-nav-link-active" : "main-nav-link-not-active"
