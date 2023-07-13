@@ -15,7 +15,7 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import HeaderTesting from "./components/HeaderTesting";
 import ExperiencePage from "./pages/ExperiencePage";
-import ExperienceDetailPage from "./pages/ExperienceDetailPage";
+// import ExperienceDetailPage from "./pages/ExperienceDetailPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import EducationPage from "./pages/EducationPage";
 import ContactColumn from "./components/ContactColumn";
@@ -43,11 +43,11 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* <Route path="experience" element={<ExperiencePage />} />
-            <Route
+            <Route path="experience" element={<ExperiencePage />} />
+            {/* <Route
               path="experience/:eventId"
               element={<ExperienceDetailPage />}
-  />*/}
+  /> */}
             <Route path="projects" element={<ProjectsPage />} />
             <Route path="education" element={<EducationPage />} />
             {/*<Route path="contact" element={<Contact />} />*/}

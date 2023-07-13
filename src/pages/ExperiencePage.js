@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "reactstrap";
-import ExperienceEvents from "../features/experience/Complex/ExperienceList";
-import ExperienceListSimple from "../features/experience/Simple/ExperienceListSimple";
+//import ExperienceEvents from "../features/experience/Complex/ExperienceList";
+//import ExperienceListSimple from "../features/experience/Simple/ExperienceListSimple";
 import { useState, useEffect } from "react";
 
 import PageTitleThree from "../components/PageTitle3";
@@ -9,7 +9,6 @@ const ExperiencePage = () => {
   return (
     <Container fluid className="event-page">
       <PageTitleThree pageTitle="Experience" />
-      <ExperienceEvents />
     </Container>
   );
 };

@@ -20,7 +20,7 @@ import CalculatorSC from "../assets/images/CalculatorSC.png";
 
 export const PROJECTS = [
   {
-    id: 0,
+    id: 1,
     title: "trainrAI",
     subtitle: "Founder & Software Developer",
     description:
@@ -44,18 +44,14 @@ export const PROJECTS = [
     ],
     gitHubLink: "",
   },
+
   {
-    id: 1,
+    id: 2,
     title: "Mealplanner React Native App",
     subtitle: "",
     description:
       "During the React Native portion of the Nucamp bootcamp, I created a meal planner app. Recently I recreated this project with my new skills and updated technology. ",
-    images: [
-      MealplannerRN_Home,
-      MealplannerRN_Favorites,
-      MealplannerRN_Mealplan,
-      MealplannerRN_Blog,
-    ],
+    images: [],
     allTechnology: ["Expo", "React Redux", "GitHub", "Font Awesome"],
     mainTechnology: ["React Native", "Expo", "React Redux"],
     gitHubLink: "",
@@ -72,7 +68,7 @@ export const PROJECTS = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Recreating iOS Calculator",
     subtitle: "",
     description:
@@ -91,7 +87,7 @@ export const PROJECTS = [
     gitHubLink: "https://github.com/madisonisfan/Basic-Calculator-",
   },
   {
-    id: 3,
+    id: 4,
     title: "Mealplanner React Web App",
     subtitle: "",
     description:

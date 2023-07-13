@@ -10,7 +10,7 @@ import "bootstrap-social/bootstrap-social.css";
 import "font-awesome/css/font-awesome.css";
 import "typeface-lobster";
 import "typeface-open-sans";
-import { EventImageCarousel } from "./features/experience/Complex/EventImageCarousel";
+// import { EventImageCarousel } from "./features/experience/Complex/EventImageCarousel";
 import "./Event-styles-sass.scss";
 import "./Home-styles-sass.scss";
 import "./Extra-styles-sass.scss";
