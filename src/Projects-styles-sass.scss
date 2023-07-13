@@ -10,6 +10,13 @@ $lg: 992px;
 $xl: 1200px;
 $customXL: 1400px;
 
+///SMALL DISPLAY
+.small-project-card {
+  background-color: #282646;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
 //.modal-content {
 .modal-main-container {
   color: $darkPurpleText;
@@ -30,9 +37,19 @@ $customXL: 1400px;
   font-size: 20px;
 }
 
+.modal-body {
+  padding: 0px 10px 5px 10px !important;
+}
+
 .project-modal-title {
   color: white;
   font-size: 25px;
+}
+
+.project-modal-subtitle {
+  color: $darkPurpleText;
+  font-size: 18px;
+  padding: 0px 0px 10px 10px;
 }
 
 .project-description-list-div {
@@ -55,10 +72,9 @@ $customXL: 1400px;
 //PROJECT DISPLAY EXTRA:
 .read-more-butt {
   background-color: transparent;
-  border: none;
   color: $darkPurpleText;
+  width: fit-content;
   border-bottom: solid 1px;
-  padding: 0;
 }
 
 .project-description {

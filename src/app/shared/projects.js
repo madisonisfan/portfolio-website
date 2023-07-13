@@ -20,11 +20,11 @@ import CalculatorSC from "../assets/images/CalculatorSC.png";
 
 export const PROJECTS = [
   {
-    id: 1,
+    id: 0,
     title: "trainrAI",
     subtitle: "Founder & Software Developer",
     description:
-      "After particapting in Founder University, I built and then launched trainrAI to a group of testers. trainAI is a iOS app created to help people build healthy habits and improve thier lifestyles. ",
+      "Following my participation in Founder University, I successfully built and launched trainrAI—an iOS app designed to assist individuals in cultivating healthy habits and enhancing their lifestyles. After thorough development and testing, the app is now available on the App Store",
     images: [
       TrainrAI_Checklist,
       TrainrAI_NightTasks,
@@ -46,14 +46,21 @@ export const PROJECTS = [
   },
 
   {
-    id: 2,
+    id: 1,
     title: "Mealplanner React Native App",
     subtitle: "",
     description:
-      "During the React Native portion of the Nucamp bootcamp, I created a meal planner app. Recently I recreated this project with my new skills and updated technology. ",
+      "During my participation in the React Native portion of the Nucamp bootcamp, I successfully developed a meal planner app. Building upon my newfound skills and utilizing updated technologies, I recently recreated this project to further enhance its functionality and user experience",
     images: [],
-    allTechnology: ["Expo", "React Redux", "GitHub", "Font Awesome"],
-    mainTechnology: ["React Native", "Expo", "React Redux"],
+    allTechnology: [
+      "JavaScript",
+      "React Native",
+      "Expo",
+      "React Redux",
+      "GitHub",
+      "Font Awesome",
+    ],
+    mainTechnology: ["JavaScript", "React Native", "Expo", "React Redux"],
     gitHubLink: "",
     descriptionPoints: [
       "My goal is to create a place for people to go where they can organize their weekly meal plans and be motivated by the community integrated with the site. ",
@@ -72,7 +79,7 @@ export const PROJECTS = [
     title: "Recreating iOS Calculator",
     subtitle: "",
     description:
-      "I recreated Apple’s iOS calculator with SwiftUI, which includes styling and functionality. This app was just a fun project to do, and it was a great way to grow my skills. I plan to continue this project and expand its capabilities.",
+      "I took on the exciting challenge of recreating Apple's iOS calculator using SwiftUI, incorporating both its styling and functionality. As an exciting addition, I also created a comprehensive two-part tutorial series on YouTube",
     images: [CalculatorSC],
     gitHubLink: "",
     //youtubelink
@@ -91,7 +98,7 @@ export const PROJECTS = [
     title: "Mealplanner React Web App",
     subtitle: "",
     description:
-      "I created a meal planner website in the React portion of the Nucamp. This web app was my first independent React project. The functionality is similar to what I have implemented in the mobile app version of the site. ",
+      "During the React portion of the Nucamp bootcamp, I took on the exciting challenge of creating a meal planner website. This project marked my first independent endeavor in React development",
     images: [
       Mealplanner_Home,
       Mealplanner_Recipes,
