@@ -1,11 +1,14 @@
+import Nucamp_Jumpstart from "../assets/images/Nucamp/jumpstart-generic-square.png";
+import Top_Secret from "../assets/images/Confidential/Top_Secret.png";
+
 export const EXPERIENCE = [
   {
     id: 0,
-    title: "Data Science Startup ",
+    title: "Data Science Stealth Startup",
     subtitle: "Lead Front End Developer",
     description:
       "In a collaborative effort with a talented data scientist, I am actively involved in building an innovative data handling product. My primary responsibility revolves around developing the front end of a desktop application",
-    images: [],
+    images: [Top_Secret],
     mainTechnology: ["JavaScript", "React", "Electron"],
     allTechnology: [
       "JavaScript",
@@ -16,7 +19,7 @@ export const EXPERIENCE = [
       "HTML",
       "CSS",
       "GitHub",
-      "Visual Studio Code",
+      //"Visual Studio Code",
     ],
     descriptionPoints: [
       "Collaborating with a data scientist to translate complex data models and algorithms into user-friendly interfaces",
@@ -33,7 +36,7 @@ export const EXPERIENCE = [
     subtitle: "Ambassador & Workshop Conductor",
     description:
       "As an ambassador, my role involves hosting engaging events and conducting interactive coding demonstrations. I aim to address any questions, thoughts, and concerns individuals may have about pursuing a career in software development",
-    images: [],
+    images: [Nucamp_Jumpstart],
     mainTechnology: ["JavaScript", "HTML", "CSS"],
     allTechnology: ["JavaScript", "HTML", "CSS", "Visual Studio Code"],
     descriptionPoints: [
