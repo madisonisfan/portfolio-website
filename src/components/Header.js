@@ -51,6 +51,7 @@ const Header = () => {
             <NavItem style={{ alignItems: "center" }}>
               <NavLink
                 to="/experience"
+                onClick={closeNavbar}
                 className={({ isActive }) =>
                   isActive ? "main-nav-link-active" : "main-nav-link-not-active"
                 }
