@@ -105,12 +105,9 @@ const ProjectDisplay = ({ project }) => {
   }, []);
 
   const mainTech = mainTechnology.map((tech) => {
-    console.log(`tech`, tech);
     return (
-      <li className="project-tech">
-        <div className="d-flex">
-          {tech} <Seperator />
-        </div>
+      <li className="project-tech d-flex">
+        {tech} <Seperator />
       </li>
     );
   });

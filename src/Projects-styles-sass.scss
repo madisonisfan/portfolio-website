@@ -23,14 +23,6 @@ $customXL: 1400px;
   }
 }
 
-.small-project-description {
-  margin-top: 10px;
-  text-align: left;
-  background-color: #404040;
-  color: rgb(206, 205, 205);
-  padding: 20px;
-}
-
 .small-project-subtitle {
   text-align: left;
   padding: 7px 0px 10px 0px;
@@ -97,6 +89,7 @@ $customXL: 1400px;
   color: $darkPurpleText;
   width: fit-content;
   border-bottom: solid 1px;
+  font-size: 15px;
   //text-align: left;
 }
 
@@ -115,6 +108,7 @@ $customXL: 1400px;
   padding-top: 0px;
   display: inline;
   text-shadow: 1px 1px 1px #000000;
+  white-space: nowrap;
 }
 
 //MAX: SM
@@ -125,6 +119,9 @@ $customXL: 1400px;
   }
 }
 
+@media only screen and (min-width: $xs) {
+}
+
 @media only screen and (min-width: $xs) and (max-width: $sm) {
   .card.project-card {
     // min-height: 320px;
@@ -133,6 +130,9 @@ $customXL: 1400px;
 }
 
 @media only screen and (max-width: $sm) {
+  .read-more-butt {
+    display: block;
+  }
   .card.project-card {
     //min-height: 290px;
     background-color: #282646;
@@ -144,12 +144,12 @@ $customXL: 1400px;
     text-align: left;
   }
 
-  .project-title {
-    font-weight: 500;
-    font-size: 20px !important;
-    text-align: left;
-    color: white;
-  }
+  // .project-title {
+  //   font-weight: 500;
+  //   font-size: 20px !important;
+  //   text-align: left;
+  //   color: white;
+  // }
   .project-subtitle {
     padding-bottom: 10px;
     color: $darkPurpleText;
@@ -164,11 +164,14 @@ $customXL: 1400px;
 
 //MIN: SM
 @media only screen and (min-width: $sm) {
-  .project-title {
-    font-weight: 400;
-    font-size: 20px !important;
-    text-align: left;
-    color: $darkPurpleText;
+  // .project-title {
+  //   font-weight: 400;
+  //   font-size: 20px !important;
+  //   text-align: left;
+  //   color: $darkPurpleText;
+  // }
+  .read-more-butt {
+    display: none;
   }
   .project-subtitle {
     text-align: left;
@@ -238,17 +241,36 @@ $customXL: 1400px;
 
 //MAX: LG
 @media only screen and (max-width: $lg) {
+  .project-title {
+    font-weight: 500;
+    font-size: 20px !important;
+    text-align: left;
+    color: white;
+  }
+  .project-description {
+    margin-top: 10px;
+    text-align: left;
+    background-color: #404040;
+    color: rgb(206, 205, 205);
+    padding: 10px;
+    font-size: 15px;
+  }
   .project-image {
     display: none;
   }
 
   .project-main-tech-list {
-    display: none;
+    //display: none;
+    overflow: scroll;
+    font-size: 15px;
   }
 }
 
 //MIN: MD
 @media only screen and (min-width: $lg) {
+  .read-more-butt {
+    display: none;
+  }
   .project-page-container {
     max-width: 70% !important;
   }
