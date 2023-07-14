@@ -9,15 +9,8 @@ import { useSpring, animated, to } from "@react-spring/web";
 import { useGesture } from "react-use-gesture";
 
 const SmallProjectDisplay = ({ project }) => {
-  const {
-    id,
-    title,
-    subtitle,
-    description,
-    images,
-    mainTechnology,
-    gitHubLink,
-  } = project;
+  const { id, title, subtitle, description, mainTechnology, gitHubLink } =
+    project;
   const [toggleState, toggle] = useState(true);
 
   const [isDetailModalOpen, toggleDetailModal] = useState(false);
@@ -40,7 +33,7 @@ const SmallProjectDisplay = ({ project }) => {
 
   return (
     <>
-      <animated.div
+      <div //animated.div
       // onMouseOver={() => {
       //   if (window.innerWidth > 576) {
       //     api({ scale: 1.1 });
@@ -60,17 +53,23 @@ const SmallProjectDisplay = ({ project }) => {
           onClick={() => toggleDetailModal(!isDetailModalOpen)}
         >
           <Card.Title className="project-title">{title}</Card.Title>
-          <Card.Subtitle className="project-subtitle">{subtitle}</Card.Subtitle>
-          <Card.Text className="project-description">{description}</Card.Text>
+          <Card.Subtitle className="small-project-subtitle">
+            {subtitle}
+          </Card.Subtitle>
 
-          <button
-            className="read-more-butt"
-            onClick={() => toggleDetailModal(true)}
-          >
-            Read More
-          </button>
+          <Card.Body>
+            <Card.Text className="small-project-description">
+              {description}
+            </Card.Text>
+            <button
+              className="read-more-butt"
+              onClick={() => toggleDetailModal(true)}
+            >
+              Read More
+            </button>
+          </Card.Body>
         </Card>
-      </animated.div>
+      </div>
       <Modal
         centered
         size="xl"

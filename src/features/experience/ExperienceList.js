@@ -5,7 +5,7 @@ import SmallProjectDisplay from "../projects/SmallProjectDisplay";
 import { useState, useEffect } from "react";
 
 const ExperienceList = () => {
-  const [isBelowLg, setBelowLg] = useState(false);
+  const [isBelowLg, setBelowLg] = useState(window.innerWidth < 992);
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,6 +29,7 @@ const ExperienceList = () => {
         return (
           project && (
             <Col xs={12} mb="10" key={project.id}>
+              {/* <ProjectDisplay project={project} /> */}
               {isBelowLg && <SmallProjectDisplay project={project} />}
               {!isBelowLg && <ProjectDisplay project={project} />}
             </Col>

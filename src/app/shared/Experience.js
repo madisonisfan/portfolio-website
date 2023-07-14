@@ -4,7 +4,7 @@ export const EXPERIENCE = [
     title: "Data Science Startup ",
     subtitle: "Lead Front End Developer",
     description:
-      "In a collaborative effort with a talented data scientist, I am actively involved in building an innovative data handling product. My primary responsibility revolves around developing the front end of a desktop application",
+      "scjnwchjobvuehjvbehvubeuvehivbonjipenvcejIn a collaborative effort with a talented data scientist, I am actively involved in building an innovative data handling product. My primary responsibility revolves around developing the front end of a desktop application",
     images: [],
     mainTechnology: ["JavaScript", "React", "Electron"],
     allTechnology: [

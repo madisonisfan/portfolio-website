@@ -13,8 +13,30 @@ $customXL: 1400px;
 ///SMALL DISPLAY
 .small-project-card {
   background-color: #282646;
-  padding: 20px;
+  //background-color: white;
+  padding: 20px 20px 10px 20px;
   margin-bottom: 100px;
+  // height: fit-content;
+  .card-body {
+    padding: 0px !important;
+    text-align: left;
+  }
+}
+
+.small-project-description {
+  margin-top: 10px;
+  text-align: left;
+  background-color: #404040;
+  color: rgb(206, 205, 205);
+  padding: 20px;
+}
+
+.small-project-subtitle {
+  text-align: left;
+  padding: 0px 0px 10px 0px;
+  color: $darkPurpleText;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #000000;
 }
 
 //.modal-content {
@@ -75,6 +97,7 @@ $customXL: 1400px;
   color: $darkPurpleText;
   width: fit-content;
   border-bottom: solid 1px;
+  //text-align: left;
 }
 
 .project-description {
@@ -97,13 +120,15 @@ $customXL: 1400px;
 //MAX: SM
 @media only screen and (max-width: $xs) {
   .card.project-card {
-    min-height: 345px;
+    //min-height: 345px;
+    // height: fit-content;
   }
 }
 
 @media only screen and (min-width: $xs) and (max-width: $sm) {
   .card.project-card {
-    min-height: 320px;
+    // min-height: 320px;
+    // height: fit-content;
   }
 }
 
@@ -156,7 +181,8 @@ $customXL: 1400px;
 //BETWEEN SM & MD
 @media only screen and (min-width: $sm) and (max-width: $md) {
   .card.project-card {
-    min-height: 330px;
+    //min-height: 330px;
+    // height: fit-content;
     background-color: #282646;
     margin-bottom: 150px;
   }
@@ -165,7 +191,8 @@ $customXL: 1400px;
 //BETWEEN MD & LG
 @media only screen and (min-width: $md) and (max-width: $lg) {
   .card.project-card {
-    min-height: 280px;
+    height: fit-content;
+    // min-height: 280px;
     background-color: #282646;
     margin-bottom: 150px;
   }
@@ -202,6 +229,7 @@ $customXL: 1400px;
 
   .project-card-overlay {
     padding: 20px;
+    // height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -282,9 +310,9 @@ $customXL: 1400px;
     display: none;
   }
 
-  .read-more-butt {
-    margin-top: 10px;
-  }
+  // .read-more-butt {
+  //   margin-top: 10px;
+  // }
 }
 
 .project-card {
@@ -302,5 +330,5 @@ $customXL: 1400px;
 .project-description {
 }
 
-.read-more-button {
-}
+// .read-more-button {
+// }
