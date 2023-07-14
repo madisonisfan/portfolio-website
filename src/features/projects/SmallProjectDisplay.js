@@ -55,9 +55,7 @@ const SmallProjectDisplay = ({ project }) => {
           </Card.Subtitle>
 
           <Card.Body>
-            <Card.Text className="small-project-description">
-              {description}
-            </Card.Text>
+            <Card.Text className="project-description">{description}</Card.Text>
             <ul className="project-main-tech-list">
               <div className="d-flex project-main-tech-list">
                 <Seperator /> {mainTech}

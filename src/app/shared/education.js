@@ -77,7 +77,7 @@ export const EDUCATION = [
     dateRange: "Sept 2018 - June 2020",
     images: [Scholarship, ScholarshipTwo],
     description:
-      "While at Santa Monica College, I majored in Computer Science, earned two scholarships, joined the STEM program, and participated in the computer programming club",
+      "While at Santa Monica College, I majored in Computer Science, earned two scholarships, joined the STEM program, and participated in the computer programming club.",
     mainTechnology: ["C", "C++", "HTML"],
     allTechnology: ["C", "C++", "HTML", "Visual Studio Code"],
     descriptionPoints: [
