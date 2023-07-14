@@ -115,6 +115,7 @@ $customXL: 1400px;
   padding-top: 0px;
   display: inline;
   text-shadow: 1px 1px 1px #000000;
+  white-space: nowrap;
 }
 
 //MAX: SM
@@ -164,12 +165,12 @@ $customXL: 1400px;
 
 //MIN: SM
 @media only screen and (min-width: $sm) {
-  .project-title {
-    font-weight: 400;
-    font-size: 20px !important;
-    text-align: left;
-    color: $darkPurpleText;
-  }
+  // .project-title {
+  //   font-weight: 400;
+  //   font-size: 20px !important;
+  //   text-align: left;
+  //   color: $darkPurpleText;
+  // }
   .project-subtitle {
     text-align: left;
     padding-bottom: 10px;
@@ -238,12 +239,19 @@ $customXL: 1400px;
 
 //MAX: LG
 @media only screen and (max-width: $lg) {
+  .project-title {
+    font-weight: 500;
+    font-size: 20px !important;
+    text-align: left;
+    color: $darkPurpleText;
+  }
   .project-image {
     display: none;
   }
 
   .project-main-tech-list {
-    display: none;
+    //display: none;
+    overflow: scroll;
   }
 }
 

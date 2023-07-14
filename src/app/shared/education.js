@@ -10,7 +10,7 @@ export const EDUCATION = [
   {
     id: 0,
     title: "Nucamp Full Stack Bootcamp",
-    subtitle: "Earned the certificate of honors",
+    subtitle: "Certificate of Honors",
     dateRange: "Feb 2021 - July 2021",
     description:
       "This bootcamp emphasized creating dynamic web and mobile apps using React and React Native. Additionally, we learned about backend development and how to utilize it in our projects.",
@@ -31,7 +31,7 @@ export const EDUCATION = [
     allTechnology: [
       "JavaScript",
       "React",
-      "React Native",
+      "ReactNative",
       "Node.js",
       "Bootstrap",
       "Express",
@@ -48,7 +48,7 @@ export const EDUCATION = [
   {
     id: 1,
     title: "Web Programming with Python and JavaScript",
-    subtitle: "Earned a certificate",
+    subtitle: "Certificate",
     dateRange: "Aug 2020 - Jan 2021",
     description:
       "Throughout the course, I explored the various aspects of web development, gaining a strong foundation in its principles and acquiring a solid understanding of the key components involved.",
@@ -73,7 +73,7 @@ export const EDUCATION = [
   {
     id: 2,
     title: "Santa Monica College ",
-    subtitle: "Computer Science Major (incomplete)",
+    subtitle: "Computer Science Major - Some Coursework",
     dateRange: "Sept 2018 - June 2020",
     images: [Scholarship, ScholarshipTwo],
     description:

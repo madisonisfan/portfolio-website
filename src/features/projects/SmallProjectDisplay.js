@@ -21,12 +21,9 @@ const SmallProjectDisplay = ({ project }) => {
   }));
 
   const mainTech = mainTechnology.map((tech) => {
-    console.log(`tech`, tech);
     return (
-      <li className="project-tech">
-        <div className="d-flex">
-          {tech} <Seperator />
-        </div>
+      <li className="project-tech d-flex">
+        {tech} <Seperator />
       </li>
     );
   });
@@ -61,6 +58,11 @@ const SmallProjectDisplay = ({ project }) => {
             <Card.Text className="small-project-description">
               {description}
             </Card.Text>
+            <ul className="project-main-tech-list">
+              <div className="d-flex project-main-tech-list">
+                <Seperator /> {mainTech}
+              </div>
+            </ul>
             <button
               className="read-more-butt"
               onClick={() => toggleDetailModal(true)}
