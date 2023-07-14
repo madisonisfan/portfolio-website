@@ -1,15 +1,15 @@
 import { Container, Row, Col } from "reactstrap";
-import ExperienceEvents from "../features/experience/Complex/ExperienceList";
-import ExperienceListSimple from "../features/experience/Simple/ExperienceListSimple";
+import ExperienceList from "../features/experience/ExperienceList";
+
 import { useState, useEffect } from "react";
 
 import PageTitleThree from "../components/PageTitle3";
 
 const ExperiencePage = () => {
   return (
-    <Container fluid className="event-page">
+    <Container fluid className="project-page-container">
       <PageTitleThree pageTitle="Experience" />
-      <ExperienceEvents />
+      <ExperienceList />
     </Container>
   );
 };

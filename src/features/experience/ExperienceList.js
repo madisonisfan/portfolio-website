@@ -1,11 +1,10 @@
 import { Row, Col } from "reactstrap";
-import { PROJECTS } from "../../app/shared/projects";
+import { EXPERIENCE } from "../../app/shared/experience";
 import ProjectDisplay from "../projects/ProjectDisplay";
 import SmallProjectDisplay from "../projects/SmallProjectDisplay";
 import { useState, useEffect } from "react";
-import { isBrowser } from "framer-motion";
 
-const ProjectList = () => {
+const ExperienceList = () => {
   const [isBelowLg, setBelowLg] = useState(window.innerWidth < 992);
 
   useEffect(() => {
@@ -26,17 +25,7 @@ const ProjectList = () => {
 
   return (
     <Row>
-      <Col
-        style={{
-          fontSize: 20,
-          color: "white !important",
-          backgroundColor: "white",
-        }}
-      >
-        {isBelowLg}
-      </Col>
-
-      {PROJECTS.map((project) => {
+      {EXPERIENCE.map((project) => {
         return (
           project && (
             <Col xs={12} mb="10" key={project.id}>
@@ -51,4 +40,4 @@ const ProjectList = () => {
   );
 };
 
-export default ProjectList;
+export default ExperienceList;

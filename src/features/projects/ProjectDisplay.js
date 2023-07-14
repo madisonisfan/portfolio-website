@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import { Container, Row, Col, Button } from "reactstrap";
 import Modal from "react-bootstrap/Modal";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "react-bootstrap/Image";
 import Seperator from "../../components/Seperator";
 import ProjectDetailModal from "./ProjectDetailModalBody";
@@ -21,6 +21,9 @@ const ProjectDisplay = ({ project }) => {
   const [toggleState, toggle] = useState(true);
   const [belowLg, setBelowLg] = useState(false);
   const [isDetailModalOpen, toggleDetailModal] = useState(false);
+
+  const [overlayHeight, setOverlayHeight] = useState(300);
+  const overlayRef = useRef(null);
 
   const [{ scale }, api] = useSpring(() => ({
     scale: 1,
@@ -70,6 +73,12 @@ const ProjectDisplay = ({ project }) => {
       justifyContent: belowLg ? "start" : id % 2 == 0 ? "end" : "start",
     },
   };
+
+  useEffect(() => {
+    if (overlayRef.current) {
+      setOverlayHeight(overlayRef.current.clientHeight);
+    }
+  }, [overlayRef]);
 
   useEffect(() => {
     if (window.innerWidth < 992) {
@@ -126,6 +135,9 @@ const ProjectDisplay = ({ project }) => {
         <Card
           className="project-card"
           onClick={() => toggleDetailModal(!isDetailModalOpen)}
+          style={{
+            height: overlayHeight,
+          }}
         >
           <Image
             src={images[0]}
@@ -133,7 +145,10 @@ const ProjectDisplay = ({ project }) => {
             style={styles.projectImage}
             rounded
           />
-          <Card.ImgOverlay className="project-card-img-overlay">
+          <Card.ImgOverlay
+            ref={overlayRef}
+            className="project-card-img-overlay"
+          >
             <Container className="p-0" styles={styles.projectOverlay}>
               <Row style={styles.projectRow}>
                 <Col xs={12}>

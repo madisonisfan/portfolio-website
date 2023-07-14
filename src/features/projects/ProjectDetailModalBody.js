@@ -33,8 +33,9 @@ const ProjectDetailModalBody = ({ project, toggleModal }) => {
 
   return (
     <div>
-      {/*<div>{dateRange}</div>*/}
+      {/* <div>{dateRange}</div> */}
 
+      <div className="project-modal-subtitle">{subtitle}</div>
       <ul className="project-main-tech-list" style={{ marginTop: "0px" }}>
         <div className="d-flex project-main-tech-list">
           <Seperator /> {mainTech}
@@ -57,7 +58,7 @@ const ProjectDetailModalBody = ({ project, toggleModal }) => {
 
       {event.id !== 1 && <EventImageCarousel photos={photos} />}
         */}
-      <EventImageCarousel photos={images} />
+      {images.length !== 0 && <EventImageCarousel photos={images} />}
     </div>
   );
 };

@@ -2,10 +2,10 @@ import TestImage from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG"
 import TrainrAI_ImageOne from "../assets/images/TrainrAI_Images/TrainrAI_ImageOne.PNG";
 import TrainrAI_ImageTwo from "../assets/images/TrainrAI_Images/TrainrAI_ImageTwo.PNG";
 import TrainrAI_ImageThree from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG";
-import MealplannerRN_Home from "../assets/Mealplanner-RN/MealplannerRN_Home.PNG";
-import MealplannerRN_Blog from "../assets/Mealplanner-RN/MealplannerRN_Blog.jpg";
-import MealplannerRN_Favorites from "../assets/Mealplanner-RN/MealplannerRN_Favorites.PNG";
-import MealplannerRN_Mealplan from "../assets/Mealplanner-RN/MealplannerRN_Mealplan.PNG";
+import MealplannerRN_Home from "../assets/Mealplanner-RN_Images/MealplannerRN_Home.PNG";
+import MealplannerRN_Blog from "../assets/Mealplanner-RN_Images/MealplannerRN_Blog.jpg";
+import MealplannerRN_Favorites from "../assets/Mealplanner-RN_Images/MealplannerRN_Favorites.PNG";
+import MealplannerRN_Mealplan from "../assets/Mealplanner-RN_Images/MealplannerRN_Mealplan.jpg";
 //import MealplannerRN4 from "../assets/Mealplanner-RN/MealplannerRN4.PNG";
 import Mealplanner_Home from "../assets/images/Mealplanner-react-honors/home-page.png";
 import Mealplanner_Recipes from "../assets/images/Mealplanner-react-honors/recipes-page.png";
@@ -24,7 +24,7 @@ export const PROJECTS = [
     title: "trainrAI",
     subtitle: "Founder & Software Developer",
     description:
-      "After particapting in Founder University, I built and then launched trainrAI to a group of testers. trainAI is a iOS app created to help people build healthy habits and improve thier lifestyles. ",
+      "Following my participation in Founder University, I successfully built and launched trainrAI—an iOS app designed to assist individuals in cultivating healthy habits and enhancing their lifestyles. After thorough development and testing, the app is now available on the App Store",
     images: [
       TrainrAI_Checklist,
       TrainrAI_NightTasks,
@@ -35,48 +35,56 @@ export const PROJECTS = [
     mainTechnology: ["SwiftUI", "Core Data", "CloudKit"],
     allTechnology: ["SwiftUI", "Core Data", "CloudKit", "GitHub", "Xcode"],
     descriptionPoints: [
-      "Created an iOS app in SwiftUI that helps people build healthy habits.",
-      "Now on the App Store! Previously distributed through TestFlight and was being used by a small group of beta testers.",
-      "Users are able to check off daily tasks, add bonus tasks, complete a weekly fitness assessment, view their current “perfect day” streaks and track their fitness progress.",
-      "Learning and iterating on the app based on user feedback.",
-      "Trello is being used to organize development. ",
-      "Participated in Founder University (Jason Calacanis initiative) to kick off the project: goal was to come up with an idea and launch it in 90 days which I was able to achieve. ",
+      "Led the full lifecycle of an iOS app, from design to development, TestFlight releases, and App Store launch",
+      "Created an exceptional user experience and interface by leveraging SwiftUI's modern approach alongside graphic design expertise",
+      "Utilized user feedback, in collaboration with the product manager, to drive continuous improvement of the app, resulting in a significant increase in recurrent app usage",
+      "Enhanced user data security by implementing Core Data and CloudKit",
+      "I successfully completed the Founder University program, led by Jason Calacanis, where the aim was to ideate and launch a project within a tight 90-day timeframe. I am proud to have achieved this goal, taking my idea from conception to a fully launched project",
     ],
     gitHubLink: "",
   },
+
   {
     id: 1,
     title: "Mealplanner React Native App",
     subtitle: "",
     description:
-      "During the React Native portion of the Nucamp bootcamp, I created a meal planner app. Recently I recreated this project with my new skills and updated technology. ",
+      "During my participation in the React Native portion of the Nucamp bootcamp, I successfully developed a meal planner app. Building upon my newfound skills and utilizing updated technologies, I recently recreated this project to further enhance its functionality and user experience",
+    images: [],
+    allTechnology: [
+      "JavaScript",
+      "React Native",
+      "Expo",
+      "React Redux",
+      "GitHub",
+      "Font Awesome",
+    ],
+    mainTechnology: ["JavaScript", "React Native", "Expo", "React Redux"],
     images: [
       MealplannerRN_Home,
-      MealplannerRN_Favorites,
       MealplannerRN_Mealplan,
       MealplannerRN_Blog,
+      MealplannerRN_Favorites,
     ],
-    allTechnology: ["Expo", "React Redux", "GitHub", "Font Awesome"],
-    mainTechnology: ["React Native", "Expo", "React Redux"],
-    gitHubLink: "",
+    gitHubLink: "https://github.com/madisonisfan/mealplanner-RN-2022",
     descriptionPoints: [
-      "My goal is to create a place for people to go where they can organize their weekly meal plans and be motivated by the community integrated with the site. ",
-      "Users can sift through an extensive list of recipes and contribute their own recipes to the app. ",
-      "Trello is being used to organize development. ",
-      "Redux is used to manage the application's state. ",
-      "Expo Go is used to test the app on my device. ",
-      "React Navigation is used throughout the app to navigate between screens.",
-      "React Native Elements are used on every screen to access components such as Icons and Buttons.",
+      "My goal is to create a place for people to go where they can organize their weekly meal plans and be motivated by the community integrated with the site",
+      "Users can sift through an extensive list of recipes and contribute their own recipes to the app",
+      "Trello is being used to organize development",
+      "Redux is used to manage the application's state",
+      "Expo Go is used to test the app on my device",
+      "React Navigation is used throughout the app to navigate between screens",
+      "React Native Elements are used on every screen to access components such as Icons and Buttons",
     ],
     gitHubLink: "https://github.com/madisonisfan/mealplanner-RN-2022",
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Recreating iOS Calculator",
     subtitle: "",
     description:
-      "I recreated Apple’s iOS calculator with SwiftUI, which includes styling and functionality. This app was just a fun project to do, and it was a great way to grow my skills. I plan to continue this project and expand its capabilities.",
+      "I took on the exciting challenge of recreating Apple's iOS calculator using SwiftUI, incorporating both its styling and functionality. As an exciting addition, I also created a comprehensive two-part tutorial series on YouTube",
     images: [CalculatorSC],
     gitHubLink: "",
     //youtubelink
@@ -84,18 +92,17 @@ export const PROJECTS = [
     allTechnology: ["Swift", "SwiftUI", "Xcode"],
     mainTechnology: ["Swift", "SwiftUI"],
     descriptionPoints: [
-      "On YouTube, I posted a two-part tutorial for this project.",
-      "The first step was to style. Since I was using SwiftUI, retrieving the correct colors and icons was easy. ",
-      "The second step was functionality. By the end, the app could complete any operations it was asked to do. ",
+      "Leveraged SwiftUI to  recreate Apple's iOS calculator, ensuring both accurate styling and functionality",
+      "Published a comprehensive two-part tutorial on YouTube, providing step-by-step guidance",
     ],
     gitHubLink: "https://github.com/madisonisfan/Basic-Calculator-",
   },
   {
-    id: 3,
+    id: 4,
     title: "Mealplanner React Web App",
     subtitle: "",
     description:
-      "I created a meal planner website in the React portion of the Nucamp. This web app was my first independent React project. The functionality is similar to what I have implemented in the mobile app version of the site. ",
+      "During the React portion of the Nucamp bootcamp, I took on the exciting challenge of creating a meal planner website. This project marked my first independent endeavor in React development",
     images: [
       Mealplanner_Home,
       Mealplanner_Recipes,
@@ -112,10 +119,10 @@ export const PROJECTS = [
       "Font Awesome",
     ],
     descriptionPoints: [
-      "This web app was my first time building a React app independently. ",
-      "My goal is to create a place for people to go where they can organize their weekly meal plans and be motivated by the community integrated with the site. ",
-      "Users can sift through an extensive list of recipes and contribute their own recipes to the app. ",
-      "Redux is used to manage the application's state. ",
+      "This web app was my first time building a React app independently ",
+      "My goal is to create a place for people to go where they can organize their weekly meal plans and be motivated by the community integrated with the site ",
+      "Users can sift through an extensive list of recipes and contribute their own recipes to the app ",
+      "Redux is used to manage the application's state ",
     ],
     gitHubLink: "https://github.com/madisonisfan/mealplanner-react",
   },

@@ -78,7 +78,7 @@ const ContactColumn = () => {
 
         <div
           style={{
-            height: "150px",
+            height: "120px",
             backgroundColor: "#8b50e3",
             width: "1px",
             marginLeft: "auto",
