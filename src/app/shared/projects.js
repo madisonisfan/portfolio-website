@@ -2,10 +2,10 @@ import TestImage from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG"
 import TrainrAI_ImageOne from "../assets/images/TrainrAI_Images/TrainrAI_ImageOne.PNG";
 import TrainrAI_ImageTwo from "../assets/images/TrainrAI_Images/TrainrAI_ImageTwo.PNG";
 import TrainrAI_ImageThree from "../assets/images/TrainrAI_Images/TrainrAI_ImageThree.PNG";
-import MealplannerRN_Home from "../assets/Mealplanner-RN/MealplannerRN_Home.PNG";
-import MealplannerRN_Blog from "../assets/Mealplanner-RN/MealplannerRN_Blog.jpg";
-import MealplannerRN_Favorites from "../assets/Mealplanner-RN/MealplannerRN_Favorites.PNG";
-import MealplannerRN_Mealplan from "../assets/Mealplanner-RN/MealplannerRN_Mealplan.PNG";
+import MealplannerRN_Home from "../assets/Mealplanner-RN_Images/MealplannerRN_Home.PNG";
+import MealplannerRN_Blog from "../assets/Mealplanner-RN_Images/MealplannerRN_Blog.jpg";
+import MealplannerRN_Favorites from "../assets/Mealplanner-RN_Images/MealplannerRN_Favorites.PNG";
+import MealplannerRN_Mealplan from "../assets/Mealplanner-RN_Images/MealplannerRN_Mealplan.jpg";
 //import MealplannerRN4 from "../assets/Mealplanner-RN/MealplannerRN4.PNG";
 import Mealplanner_Home from "../assets/images/Mealplanner-react-honors/home-page.png";
 import Mealplanner_Recipes from "../assets/images/Mealplanner-react-honors/recipes-page.png";
@@ -60,7 +60,13 @@ export const PROJECTS = [
       "Font Awesome",
     ],
     mainTechnology: ["JavaScript", "React Native", "Expo", "React Redux"],
-    gitHubLink: "",
+    images: [
+      MealplannerRN_Home,
+      MealplannerRN_Mealplan,
+      MealplannerRN_Blog,
+      MealplannerRN_Favorites,
+    ],
+    gitHubLink: "https://github.com/madisonisfan/mealplanner-RN-2022",
     descriptionPoints: [
       "My goal is to create a place for people to go where they can organize their weekly meal plans and be motivated by the community integrated with the site",
       "Users can sift through an extensive list of recipes and contribute their own recipes to the app",
