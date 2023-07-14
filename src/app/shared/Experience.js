@@ -4,7 +4,7 @@ export const EXPERIENCE = [
     title: "Data Science Startup ",
     subtitle: "Lead Front End Developer",
     description:
-      "scjnwchjobvuehjvbehvubeuvehivbonjipenvcejIn a collaborative effort with a talented data scientist, I am actively involved in building an innovative data handling product. My primary responsibility revolves around developing the front end of a desktop application",
+      "In a collaborative effort with a talented data scientist, I am actively involved in building an innovative data handling product. My primary responsibility revolves around developing the front end of a desktop application",
     images: [],
     mainTechnology: ["JavaScript", "React", "Electron"],
     allTechnology: [
@@ -38,8 +38,8 @@ export const EXPERIENCE = [
     allTechnology: ["JavaScript", "HTML", "CSS", "Visual Studio Code"],
     descriptionPoints: [
       "Organizing and hosting in-person and online events to conduct interactive web development demos and provide guidance to individuals in their software development journey",
-      "Utilized strong public speaking skills to deliver engaging presentations and facilitate a positive learning environment",
-      "Leveraged marketing techniques and social media platforms to promote coding bootcamp programs and attract a wider audience",
+      "Utilizing strong public speaking skills to deliver engaging presentations and facilitate a positive learning environment",
+      "Leveraging  marketing techniques and social media platforms to promote coding bootcamp programs and attract a wider audience",
     ],
     gitHubLink: "",
   },

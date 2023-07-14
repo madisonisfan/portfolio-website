@@ -15,10 +15,10 @@ const SmallProjectDisplay = ({ project }) => {
 
   const [isDetailModalOpen, toggleDetailModal] = useState(false);
 
-  //   const [{ scale }, api] = useSpring(() => ({
-  //     scale: 1,
-  //     //config: { mass: 5, tension: 350, friction: 40 }
-  //   }));
+  const [{ scale }, api] = useSpring(() => ({
+    scale: 1,
+    //config: { mass: 5, tension: 350, friction: 40 }
+  }));
 
   const mainTech = mainTechnology.map((tech) => {
     console.log(`tech`, tech);
@@ -33,20 +33,20 @@ const SmallProjectDisplay = ({ project }) => {
 
   return (
     <>
-      <div //animated.div
-      // onMouseOver={() => {
-      //   if (window.innerWidth > 576) {
-      //     api({ scale: 1.1 });
-      //   }
-      // }}
-      // onMouseOut={() => {
-      //   if (window.innerWidth > 576) {
-      //     api({ scale: 1 });
-      //   }
-      // }}
-      // style={{
-      //   scale: to([scale], (s) => s),
-      // }}
+      <animated.div
+        onMouseOver={() => {
+          if (window.innerWidth > 576) {
+            api({ scale: 1.1 });
+          }
+        }}
+        onMouseOut={() => {
+          if (window.innerWidth > 576) {
+            api({ scale: 1 });
+          }
+        }}
+        style={{
+          scale: to([scale], (s) => s),
+        }}
       >
         <Card
           className="small-project-card"
@@ -69,7 +69,7 @@ const SmallProjectDisplay = ({ project }) => {
             </button>
           </Card.Body>
         </Card>
-      </div>
+      </animated.div>
       <Modal
         centered
         size="xl"
