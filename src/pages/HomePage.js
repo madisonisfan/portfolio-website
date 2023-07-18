@@ -12,6 +12,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Seperator from "../components/Seperator";
 import Resume from "../app/assets/pdfs/resume_version4.pdf";
+import AboutPage from "./AboutMe";
 import PageTitleThree from "../components/PageTitle3";
 import MainPageTrainrAI from "../features/home/MainPageTrainrAI";
 
@@ -46,7 +47,8 @@ const HomePage = () => {
           </Col>
         </Row>
       </Container>
-      <MainPageTrainrAI />
+      <AboutPage />
+      {/* <MainPageTrainrAI /> */}
     </div>
   );
 };
