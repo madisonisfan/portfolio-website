@@ -1,6 +1,7 @@
 $mainBackgroundColor: #171629;
 $darkPurpleText: #c9b7db;
 $neonPurple: #8b50e3;
+
 $sm: 576px;
 $md: 768px;
 $lg: 992px;
@@ -118,4 +119,12 @@ $xl: 1200px;
   //width: 150px;
   font-size: 20px;
   font-weight: 400;
+}
+
+/* ABOUT ME */
+
+.about-me-point {
+  color: $darkPurpleText;
+  text-align: left;
+  padding: 0px 0px 15px 0px;
 }
