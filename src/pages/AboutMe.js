@@ -14,7 +14,10 @@ const AboutPage = () => {
         return (
           <Row>
             <Col className="about-me-point">
-              <div dangerouslySetInnerHTML={{ __html: point }} />
+              <div
+                dangerouslySetInnerHTML={{ __html: point }}
+                style={{ paddingLeft: 10 }}
+              />
             </Col>
           </Row>
         );
